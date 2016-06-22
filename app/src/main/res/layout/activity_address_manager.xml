@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/title_my" />
+
+    <RelativeLayout
+        android:id="@+id/rl_no_address"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include1" >
+
+        <ImageView
+            android:id="@+id/iv_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="120dp"
+            android:src="@drawable/address_manager" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_map"
+            android:layout_centerHorizontal="true"
+            android:text="您还未添加任何地址"
+            android:textColor="#333"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_address_manager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include1"
+        android:dividerHeight="1px" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d6d6d6" />
+
+        <TextView
+            android:id="@+id/tv_add_address"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="#fff"
+            android:drawableLeft="@drawable/add_address"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:text="新地址"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_my" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#eeeeee"
+        android:gravity="center_vertical"
+        android:paddingLeft="15sp"
+        android:text="接收通知"
+        android:textColor="#666666"
+        android:textSize="12sp" />
+
+    <cn.longchou.wholesale.view.ItemMyInformation
+        android:id="@+id/imi_push_set"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#eeeeee"
+        android:gravity="center_vertical"
+        android:paddingLeft="15sp"
+        android:text="图片显示"
+        android:textColor="#666666"
+        android:textSize="12sp" />
+
+    <cn.longchou.wholesale.view.ItemMyInformation
+        android:id="@+id/imi_clear_catch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#eeeeee"
+        android:gravity="center_vertical"
+        android:paddingLeft="15sp"
+        android:text="支持我们"
+        android:textColor="#666666"
+        android:textSize="12sp" />
+
+    <cn.longchou.wholesale.view.ItemMyInformation
+        android:id="@+id/imi_give_good_command"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <cn.longchou.wholesale.view.ItemMyInformation
+        android:id="@+id/imi_link_custom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <cn.longchou.wholesale.view.ItemMyInformation
+        android:id="@+id/imi_share_friend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#eeeeee"
+        android:gravity="center_vertical"
+        android:paddingLeft="15sp"
+        android:text="关于我们"
+        android:textColor="#666666"
+        android:textSize="12sp" />
+
+    <cn.longchou.wholesale.view.ItemMyInformation
+        android:id="@+id/imi_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <cn.longchou.wholesale.view.ItemMyInformation
+        android:id="@+id/imi_server_protocl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

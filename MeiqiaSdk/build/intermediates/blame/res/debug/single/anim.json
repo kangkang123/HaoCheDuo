@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\res\\merged\\debug\\anim\\mq_message_form_enter.xml",
+        "source": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\src\\main\\res\\anim\\mq_message_form_enter.xml"
+    },
+    {
+        "merged": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\res\\merged\\debug\\anim\\mq_loading.xml",
+        "source": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\src\\main\\res\\anim\\mq_loading.xml"
+    },
+    {
+        "merged": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\res\\merged\\debug\\anim\\mq_message_form_exit.xml",
+        "source": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\src\\main\\res\\anim\\mq_message_form_exit.xml"
+    }
+]

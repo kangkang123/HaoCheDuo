@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="#ffffff"
+    android:gravity="center_vertical" >
+
+    <CheckBox
+        android:id="@+id/cb_choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="全选" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="定  金:"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_finish_earnest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.00元"
+                    android:textColor="#f00"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="总金额:"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_finish_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.00万元"
+                    android:textColor="#f00"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_finish_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ed6c01"
+            android:gravity="right|center_vertical"
+            android:padding="10dp"
+            android:text="提交订单"
+            android:textSize="15sp"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</LinearLayout>

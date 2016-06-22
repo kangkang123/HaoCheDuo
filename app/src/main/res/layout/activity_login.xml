@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+
+    <include layout="@layout/title_my" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/et_login_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#f0eff5"
+            android:hint="请输入手机号"
+            android:inputType="phone"
+            android:padding="8dp"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/et_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:background="#f0eff5"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:padding="6dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_login_finish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#ed6c01"
+            android:gravity="center"
+            android:clickable="true"
+            android:padding="8dp"
+            android:text="登录"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_forget_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:padding="8dp"
+            android:text="忘记密码？"
+            android:clickable="true"
+            android:textColor="#ed6c01"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

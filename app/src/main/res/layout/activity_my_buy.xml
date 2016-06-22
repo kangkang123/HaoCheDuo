@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dl_my_buy"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/title_my" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#ffffff" >
+
+            <TextView
+                android:id="@+id/tv_item_my_buy_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="联系人"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/tv_item_my_buy_name"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="32dp"
+                android:gravity="center_vertical|right"
+                android:hint="姓名"
+                android:textColor="#666666"
+                android:background="#ffffff"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/iv_my_line_buy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_item_my_buy_link"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/line_item" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#ffffff" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="联系电话"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/tv_item_my_buy_phone"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="32dp"
+                android:gravity="center_vertical|right"
+                android:hint="号码"
+                android:background="#ffffff"
+                android:textColor="#666666"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/lv_my_buy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:divider="#00000000"
+            android:dividerHeight="0dp" >
+        </ListView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_my_buy_submit"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_gravity="bottom"
+            android:background="#ed6c01"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+ 
+    <!-- <LinearLayout
+        android:id="@+id/ll_my_buy_right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="#ffffff" 
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/my_buy_title"
+            layout="@layout/title_my" />
+
+        <ListView
+            android:id="@+id/lv_my_buy_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#ffffff"
+            android:dividerHeight="1px" >
+        </ListView>
+    </LinearLayout> -->
+  
+    <FrameLayout
+        android:id="@+id/fl_my_buy"
+        android:layout_gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </FrameLayout>
+
+</android.support.v4.widget.DrawerLayout>

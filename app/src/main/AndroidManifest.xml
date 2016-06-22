@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="cn.longchou.wholesale"
+          xmlns:tools="http://schemas.android.com/tools"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+		  
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    
+    
+    
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="com.android.settings.cloud.push.InstallCompatibilityProvider" />
+    
+    <uses-permission android:name="android.permission.READ_LOGS" >
+    </uses-permission>
+    
+    <uses-permission android:name="android.intent.action.TIME_TICK" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <!-- 蓝牙分享所需的权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    
+
+    <application
+        android:name=".base.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon, android:theme" >
+        <activity android:name="cn.longchou.wholesale.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+			<intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="wxbcc3051c0f5de023" />
+            </intent-filter>
+        </activity>
+		
+		<activity
+            android:name="cn.longchou.wholesale.activity.MainActivity"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity android:name="cn.longchou.wholesale.activity.FirstLocationActivity" >
+        </activity>
+        <activity android:name="cn.longchou.wholesale.activity.SecondLocationActivity" >
+        </activity>
+        <activity android:name="cn.longchou.wholesale.activity.HotSearchActivity" >
+
+            <!-- android:windowSoftInputMode="adjustPan" -->
+
+        </activity>
+        <activity android:name="cn.longchou.wholesale.activity.MyNewsActivity" >
+        </activity>
+        <activity android:name="cn.longchou.wholesale.activity.MyNewsDetailActivity" >
+        </activity>
+        <activity android:name="cn.longchou.wholesale.activity.MyOrdersActivity" >
+        </activity>
+        <activity android:name="cn.longchou.wholesale.activity.MyOrdersDetailActivity" >
+        </activity>
+        <activity android:name="cn.longchou.wholesale.activity.MyBuyActivity" >
+        </activity>
+        <activity android:name="cn.longchou.wholesale.activity.MyAttentionActivity" >
+        </activity>
+        <activity android:name="cn.longchou.wholesale.activity.MyInformationActivity" >
+        </activity>
+        <activity android:name="cn.longchou.wholesale.activity.ChangePasswordActivity" >
+        </activity>
+        <activity android:name="cn.longchou.wholesale.activity.VerificationCodeActivity" >
+        </activity>
+        <activity android:name="cn.longchou.wholesale.activity.SetNewPhoneActivity" >
+        </activity>
+        <activity android:name="cn.longchou.wholesale.activity.HelpCenterActivity" >
+        </activity>
+        <activity android:name="cn.longchou.wholesale.activity.HelpQuestionActivity" >
+        </activity>
+        <activity android:name="cn.longchou.wholesale.activity.QuestionDetailActivity" >
+        </activity>
+        <activity android:name="cn.longchou.wholesale.activity.RegisterActivity" >
+        </activity>
+        <activity android:name="cn.longchou.wholesale.activity.LoginActivity" >
+        </activity>
+        <activity android:name="cn.longchou.wholesale.activity.IntegrationActivity" >
+        </activity>
+        <activity android:name="cn.longchou.wholesale.activity.BalanceActivity" >
+        </activity>
+        <activity android:name="cn.longchou.wholesale.activity.ExpenditureActivity" >
+        </activity>
+        <activity android:name="cn.longchou.wholesale.activity.VehicleDetailActivity" >
+        </activity>
+        <activity android:name="cn.longchou.wholesale.activity.BaseParamsDetailActivity" >
+        </activity>
+        <activity android:name="cn.longchou.wholesale.activity.NoticeDetailActivity" >
+        </activity>
+        <activity
+            android:name="cn.longchou.wholesale.activity.TestReportActivity"
+            android:hardwareAccelerated="false" >
+        </activity>
+        <activity android:name="cn.longchou.wholesale.activity.BudgetConfirmActivity" >
+        </activity>
+        <activity android:name="cn.longchou.wholesale.activity.MyFinanceActivity" >
+        </activity>
+        <activity android:name="cn.longchou.wholesale.activity.ForgetPassWordPhoneActivity" >
+        </activity>
+        <activity android:name="cn.longchou.wholesale.activity.SetNewPassWordActivity" >
+        </activity>
+        <activity android:name="cn.longchou.wholesale.activity.BatchFinancingPlanActivity" >
+        </activity>
+        <activity android:name="cn.longchou.wholesale.activity.CarLoanPlanActivity" >
+        </activity>
+        <activity android:name="cn.longchou.wholesale.activity.ConsumerLoanPlanActivity" >
+        </activity>
+        <activity android:name="cn.longchou.wholesale.activity.FinancialPlanActivity" >
+        </activity>
+        <activity android:name="cn.longchou.wholesale.activity.RechargeActivity" >
+        </activity>
+        <activity android:name="cn.longchou.wholesale.activity.WithdrawDepositActivity" >
+        </activity>
+        <activity android:name="cn.longchou.wholesale.activity.WithdrawDepositSuccessActivity" >
+        </activity>
+        <activity android:name="cn.longchou.wholesale.activity.PreferentialActivity" >
+        </activity>
+        <activity android:name="cn.longchou.wholesale.activity.PreferentialDetailActivity" >
+        </activity>
+        <activity android:name="cn.longchou.wholesale.activity.FinancialLoansActivity" >
+        </activity>
+        <activity android:name="cn.longchou.wholesale.activity.PayMoneyActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="wxbcc3051c0f5de023" />
+            </intent-filter>
+        </activity>
+        <activity android:name="cn.longchou.wholesale.activity.FinancePlanActivcity" >
+        </activity>
+        <activity android:name="cn.longchou.wholesale.activity.ProtocolActivity" >
+        </activity>
+        <activity android:name="cn.longchou.wholesale.activity.ImageShowActivity" >
+        </activity>
+        <activity android:name="cn.longchou.wholesale.LocationActivity" >
+        </activity>
+        <activity android:name="cn.longchou.wholesale.activity.SettingActivity" >
+        </activity>
+        <activity android:name="cn.longchou.wholesale.activity.AboutActivity" >
+        </activity>
+        <activity android:name="cn.longchou.wholesale.activity.AddressManagerActivity" >
+        </activity>
+        <activity android:name="cn.longchou.wholesale.activity.EditAddressActivity" >
+        </activity>
+        <activity android:name="cn.longchou.wholesale.activity.FeedBackActivity" >
+        </activity>
+        <activity android:name="cn.longchou.wholesale.activity.SexChooseActivity" >
+        </activity>
+
+        <!-- 微信 -->
+        <activity
+            android:name="cn.longchou.wholesale.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="cn.longchou.wholesale.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="wxbcc3051c0f5de023" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="cn.longchou.wholesale.simcpux.AppRegister"
+            android:permission="com.tencent.mm.plugin.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 支付宝 -->
+        <activity android:name="com.alipay.sdk.pay.demo.PayDemoActivity" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.pay.demo.H5PayDemoActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+
+        <!-- 百度地图定位 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" >
+                </action>
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="G28WaIxz6PrXcSFqMxsnKrqW" />
+
+        <!-- 友盟统计的消息推送 -->
+
+        <service
+            android:name="cn.longchou.wholesale.service.MyPushIntentService"
+            android:process=":push" />
+        <service android:name="cn.longchou.wholesale.service.NotificationService" >
+        </service>
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="57356fbe67e58ea64a001800" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="97e6092568fb3272c5d40d3724000673" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Umeng" >
+        </meta-data>
+
+        <!--美洽-->
+        <!--聊天界面-->
+        <activity
+            android:name="com.meiqia.meiqiasdk.activity.MQConversationActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/MQTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <!--图片查看界面-->
+        <activity
+            android:name="com.meiqia.meiqiasdk.activity.MQPhotoPreviewActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/MQTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <!--图片选择界面-->
+        <activity
+            android:name="com.meiqia.meiqiasdk.activity.MQPhotoPickerActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/MQTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <!--图片选择预览界面-->
+        <activity
+            android:name="com.meiqia.meiqiasdk.activity.MQPhotoPickerPreviewActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/MQTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <!--留言表单界面-->
+        <activity
+            android:name="com.meiqia.meiqiasdk.activity.MQMessageFormActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/MQTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <service android:name="com.meiqia.core.MeiQiaService" />
+
+
+        <!--shareSDK-->
+
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!-- 调用新浪原生SDK，需要注册的回调activity -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--微信分享回调 -->
+        <activity
+            android:name=".wxapi.WEntryActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+
+        <!-- 支付宝分享回调 -->
+        <activity
+            android:name=".apshare.ShareEntryActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"/>
+
+    </application>
+
+</manifest>

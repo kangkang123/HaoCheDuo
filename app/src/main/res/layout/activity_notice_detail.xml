@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_my" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center" >
+
+            <!-- 办证须知 -->
+
+            <include layout="@layout/item_car_detail_notice" />
+
+            <!-- 车辆办证费 -->
+
+            <include layout="@layout/item_car_notice_car_money" />
+
+            <!-- 违章处理 -->
+
+            <include layout="@layout/item_car_notice_car_score" />
+
+            <!-- 暂住证 -->
+
+            <include layout="@layout/item_car_notice_residence_permit" />
+
+            <!-- 补证费用 -->
+
+            <include layout="@layout/item_car_notice_fill_permit_money" />
+
+            <!-- 车辆年审 -->
+
+            <include layout="@layout/item_car_notice_annual_verification" />
+
+            <TextView
+                android:id="@+id/tv_my_integration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="本信息仅供参考！"
+                android:textColor="#ed6c01"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

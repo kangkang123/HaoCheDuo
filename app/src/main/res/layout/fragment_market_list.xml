@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_market" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/tv_market_list_default"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="默认"
+            android:textColor="@color/market_list_choose"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/market_list_line" />
+
+        <TextView
+            android:id="@+id/tv_market_list_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:drawablePadding="3dp"
+            android:drawableRight="@drawable/default_arrow"
+            android:gravity="center"
+            android:text="价格"
+            android:textColor="@color/market_list_default"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/market_list_line" />
+
+        <TextView
+            android:id="@+id/tv_market_list_age"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:drawablePadding="3dp"
+            android:drawableRight="@drawable/default_arrow"
+            android:gravity="center"
+            android:text="车龄"
+            android:textColor="@color/market_list_default"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/market_list_line" />
+
+        <TextView
+            android:id="@+id/tv_market_list_mileage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:drawablePadding="3dp"
+            android:drawableRight="@drawable/default_arrow"
+            android:gravity="center"
+            android:text="里程"
+            android:textColor="@color/market_list_default"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/market_list_line" />
+
+        <TextView
+            android:id="@+id/tv_market_list_choose"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:drawablePadding="3dp"
+            android:drawableRight="@drawable/screenchoose"
+            android:gravity="center"
+            android:text="筛选"
+            android:textColor="@color/market_list_default"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <cn.longchou.wholesale.view.XListView
+            android:id="@+id/lv_market_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#ffffff"
+            android:divider="#d9d9d9"
+            android:dividerHeight="1dp" >
+        </cn.longchou.wholesale.view.XListView>
+
+        <com.mingle.widget.LoadingView
+            android:id="@+id/loadView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:loadingText="加载中..." />
+
+        <include
+            android:id="@+id/market_list_no_car"
+            layout="@layout/market_list_no_car"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

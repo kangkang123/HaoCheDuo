@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DialogLibrary/DialogLibrary.iml" filepath="$PROJECT_DIR$/DialogLibrary/DialogLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MeiqiaSdk/MeiqiaSdk.iml" filepath="$PROJECT_DIR$/MeiqiaSdk/MeiqiaSdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OneKeyShareNew/OneKeyShareNew.iml" filepath="$PROJECT_DIR$/OneKeyShareNew/OneKeyShareNew.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Pushlib/Pushlib.iml" filepath="$PROJECT_DIR$/Pushlib/Pushlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ShareSDK/ShareSDK.iml" filepath="$PROJECT_DIR$/ShareSDK/ShareSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WholeSale.iml" filepath="$PROJECT_DIR$/WholeSale.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 证件及手续报告 -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line_item" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#f0eff4"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp" >
+
+        <TextView
+            android:layout_width="5dp"
+            android:layout_height="18dp"
+            android:background="#ed6c01"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/tv_my_integration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="证件及手续报告"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <!-- 车辆类型 -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line_item" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d6d6d6" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#f8f8f8"
+            android:gravity="center"
+            android:text="外观颜色"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d6d6d6" />
+
+        <TextView
+            android:id="@+id/tv_car_detail_car_color"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="车牌号码"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d6d6d6" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#f8f8f8"
+            android:gravity="center"
+            android:text="内饰颜色"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d6d6d6" />
+
+        <TextView
+            android:id="@+id/tv_car_detail_car_in_color"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="车牌号码"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d6d6d6" />
+    </LinearLayout>
+    <!-- 所有人 -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line_item" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center_vertical"
+        android:weightSum="4" >
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d6d6d6" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#f8f8f8"
+            android:gravity="center"
+            android:text="使用性质"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d6d6d6" />
+
+        <TextView
+            android:id="@+id/tv_car_detail_use_nature"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d6d6d6" />
+    </LinearLayout>
+    
+    <!-- 车辆识别 -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line_item" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center_vertical"
+        android:weightSum="4" >
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d6d6d6" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#f8f8f8"
+            android:gravity="center"
+            android:text="VIN码"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d6d6d6" />
+
+        <TextView
+            android:id="@+id/tv_car_detail_car_identification"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="1C3H863R96Y"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d6d6d6" />
+    </LinearLayout>
+
+    <!-- 登记日期 -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line_item" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:weightSum="4" >
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d6d6d6" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#f8f8f8"
+            android:gravity="center"
+            android:text="登记日期  "
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d6d6d6" />
+
+        <TextView
+            android:id="@+id/tv_car_detail_record_date"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="2009年12月12日"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d6d6d6" />
+    </LinearLayout>
+    <!-- 出厂日期 -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line_item" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center_vertical"
+        android:weightSum="4" >
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d6d6d6" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#f8f8f8"
+            android:gravity="center"
+            android:text="出厂日期 "
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d6d6d6" />
+
+        <TextView
+            android:id="@+id/tv_car_detail_release_date"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="2009年12月12日"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d6d6d6" />
+    </LinearLayout>
+    <!-- 排放标准 -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line_item" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center_vertical"
+        android:weightSum="4" >
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d6d6d6" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#f8f8f8"
+            android:gravity="center"
+            android:text="排放标准"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d6d6d6" />
+
+        <TextView
+            android:id="@+id/tv_car_detail_emission_standards"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="未查询(仅供参考)"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d6d6d6" />
+    </LinearLayout>
+    <!-- 年审有效期 -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line_item" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center_vertical"
+        android:weightSum="4" >
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d6d6d6" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#f8f8f8"
+            android:gravity="center"
+            android:text="年审有效期"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d6d6d6" />
+
+        <TextView
+            android:id="@+id/tv_car_detail_annual_verification"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="2016年6月"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d6d6d6" />
+    </LinearLayout>
+
+    <!-- 过户记录 -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line_item" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center_vertical"
+        android:weightSum="4" >
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d6d6d6" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#f8f8f8"
+            android:gravity="center"
+            android:text="交强险"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d6d6d6" />
+
+        <TextView
+            android:id="@+id/tv_car_detail_compulsory"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="超过有效期"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d6d6d6" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line_item" />
+
+</LinearLayout>

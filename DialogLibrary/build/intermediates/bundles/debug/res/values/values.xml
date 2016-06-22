@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="item_grouplist_normal">#ffffff</color>
+    <color name="item_grouplist_press">#33666666</color>
+    <string name="app_name">MyLibrary</string>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+    	<item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="BaseDialog" parent="@android:style/Theme.Dialog">
+	    <item name="android:windowBackground">@drawable/bg_dialog</item>
+	</style>
+</resources>

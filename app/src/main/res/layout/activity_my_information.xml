@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_my" />
+
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#fff"
+        android:clickable="true"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/iv_my_head_login"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/iv_head_arrow"
+            android:src="@drawable/me" />
+
+        <ImageView
+            android:id="@+id/iv_head_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/arrow2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="头像"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d6d6d6" />
+
+    <cn.longchou.wholesale.view.ItemMyInformation
+        android:id="@+id/im_login_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_my_information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="28dp"
+        android:textColor="#666666"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <!-- 姓名 -->
+
+    <cn.longchou.wholesale.view.ItemMyInformation
+        android:id="@+id/im_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <!-- 身份证号 -->
+
+    <cn.longchou.wholesale.view.ItemMyInformation
+        android:id="@+id/im_card_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+    <!-- 性别 -->
+
+    <cn.longchou.wholesale.view.ItemMyInformation
+        android:id="@+id/im_sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!-- 车商认证 -->
+
+    <cn.longchou.wholesale.view.ItemMyInformation
+        android:id="@+id/im_car_certain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp" />
+
+    <!-- 地址管理 -->
+
+    <cn.longchou.wholesale.view.ItemMyInformation
+        android:id="@+id/im_address_manage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp" />
+
+    <!-- 更改密码 -->
+
+    <cn.longchou.wholesale.view.ItemMyInformation
+        android:id="@+id/im_change_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp" />
+
+    <!-- 更改手机号码 -->
+
+    <cn.longchou.wholesale.view.ItemMyInformation
+        android:id="@+id/im_change_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+</LinearLayout>

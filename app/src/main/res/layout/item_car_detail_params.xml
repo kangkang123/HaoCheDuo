@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 检查报告 -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line_item" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#f0eff4"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp" >
+
+        <TextView
+            android:layout_width="5dp"
+            android:layout_height="18dp"
+            android:background="#ed6c01"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/tv_my_integration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="基本参数"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_car_detail_params_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/right_arrow"
+            android:gravity="center_vertical"
+            android:text="查看更多"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+    </LinearLayout>
+    <!-- 厂商 -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line_item" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center_vertical"
+        android:weightSum="3" >
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d6d6d6" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#f8f8f8"
+            android:gravity="center"
+            android:text="厂商 "
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d6d6d6" />
+
+        <TextView
+            android:id="@+id/tv_car_detail_params_manufacturer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="广汽本田"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d6d6d6" />
+    </LinearLayout>
+    <!-- 级别 -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line_item" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center_vertical"
+        android:weightSum="3" >
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d6d6d6" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#f8f8f8"
+            android:gravity="center"
+            android:text="级别"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d6d6d6" />
+
+        <TextView
+            android:id="@+id/tv_car_detail_params_level"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="中型车"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d6d6d6" />
+    </LinearLayout>
+    <!-- 车身结构 -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line_item" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center_vertical"
+        android:weightSum="3" >
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d6d6d6" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#f8f8f8"
+            android:gravity="center"
+            android:text="车身结构"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d6d6d6" />
+
+        <TextView
+            android:id="@+id/tv_car_detail_params_bodywork"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="5门7座中型MPV"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d6d6d6" />
+    </LinearLayout>
+    <!-- 发动机 -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line_item" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center_vertical"
+        android:weightSum="3" >
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d6d6d6" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#f8f8f8"
+            android:gravity="center"
+            android:text="发动机   "
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d6d6d6" />
+
+        <TextView
+            android:id="@+id/tv_car_detail_params_motor"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="2.4L L4"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d6d6d6" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line_item" />
+
+</LinearLayout>

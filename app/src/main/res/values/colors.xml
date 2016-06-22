@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="market_list_choose">#ed6c01</color>
+    <color name="market_list_default">#666666</color>
+    <color name="market_list_line">#dddddd</color>
+	
+	<color name="navpage">#FFE1E8EB</color>
+
+    <color name="colorPrimary">#ed6c01</color>
+    <color name="colorPrimaryDark">#ed6c01</color>
+    <color name="colorAccent">#ed6c01</color>
+    
+    
+</resources>

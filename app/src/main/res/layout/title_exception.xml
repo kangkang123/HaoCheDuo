@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#f4f4f4" >
+
+    <ImageView
+        android:id="@+id/iv_my_news_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/arrow3" />
+
+    <TextView
+        android:id="@+id/tv_my_news_title_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="车况报告"
+        android:textColor="#333333"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/iv_my_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/line_item" />
+
+    <TextView
+        android:id="@+id/tv_my_title_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:clickable="true"
+        android:drawablePadding="6dp"
+        android:drawableRight="@drawable/exception_title"
+        android:gravity="center_vertical"
+        android:paddingRight="8dp"
+        android:textSize="16sp"
+        android:text="隆筹质检"
+        android:textColor="#8e8e93" />
+
+</RelativeLayout>

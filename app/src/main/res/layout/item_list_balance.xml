@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:padding="4dp" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_item_balance_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下单赠送"
+            android:textColor="#666666"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_item_balance_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2015-12-4"
+            android:textColor="#6a6a6a"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_item_balance_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="18dp"
+        android:text="200"
+        android:textColor="#666666"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_item_balance_mark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_item_balance_score"
+        android:layout_toLeftOf="@+id/tv_item_balance_score"
+        android:layout_marginTop="8dp"
+        android:text="+"
+        android:textColor="#666666"
+        android:textSize="12sp" />
+
+</RelativeLayout>

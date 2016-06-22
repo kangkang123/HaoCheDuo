@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_my" />
+
+    <cn.longchou.wholesale.view.ItemHelpCenter
+        android:id="@+id/help_common_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:clickable="true" />
+
+    <cn.longchou.wholesale.view.ItemHelpCenter
+        android:id="@+id/help_buycar_process"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:clickable="true" />
+
+
+    <cn.longchou.wholesale.view.ItemHelpCenter
+        android:id="@+id/help_apply_inventory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:clickable="true" />
+
+    <cn.longchou.wholesale.view.ItemHelpCenter
+        android:id="@+id/help_apply_certification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true" />
+
+    <cn.longchou.wholesale.view.ItemHelpCenter
+        android:id="@+id/help_car_intruduction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:clickable="true" />
+
+
+</LinearLayout>

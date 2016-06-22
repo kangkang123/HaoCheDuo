@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_cart_car"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#eeeeee"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/tv_title_cart_car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="购物车"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_cart_car"
+        android:src="@drawable/line_item" />
+
+    <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:id="@+id/lv_cartcar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_cart_car"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="10dp" />
+
+    <include
+        android:id="@+id/view_no_car"
+        android:layout_below="@+id/rl_cart_car"
+        layout="@layout/market_list_no_car"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/item_cart_car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/item_cart_car_foot"
+        android:visibility="gone" />
+    
+    <com.mingle.widget.LoadingView
+        android:id="@+id/loadView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:loadingText="加载中..."
+        />
+
+</RelativeLayout>

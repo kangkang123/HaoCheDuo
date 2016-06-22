@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#eeeeee"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/iv_cartcar_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="126dp"
+        android:src="@drawable/cartcar_no" />
+
+    <TextView
+        android:id="@+id/tv_try_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_cartcar_no"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:textColor="#666666"
+        android:textSize="15sp"
+        android:text="抱歉，没有找到符合条件的车源" />
+
+    <TextView
+        android:id="@+id/tv_try_shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_try_message"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/shape_choose_button"
+        android:text="去车市"
+        android:gravity="center"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

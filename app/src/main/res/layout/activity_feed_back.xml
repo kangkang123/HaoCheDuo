@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_my" />
+
+    <RelativeLayout
+        android:id="@+id/rl_feed_back"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="18dp"
+        android:background="#fff"
+        android:clickable="true"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:hint="您可能需要反馈的内容"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_arrow_pop"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/arrow_down" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_feed_back_advice"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="7dp"
+        android:background="#fff"
+        android:gravity="top"
+        android:hint="亲，欢迎吐槽~每条反馈我们都会认真阅读并尽快联系您。\n请尽可能详细描述您所遇到的问题~"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/et_feed_bakc_phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="18dp"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:hint="请留下进的联系电话"
+        android:inputType="phone"
+        android:paddingLeft="15dp"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_feed_back_submit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="#ed6c01"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:text="反馈"
+        android:textColor="#fff"
+        android:textSize="15sp" />
+
+</LinearLayout>

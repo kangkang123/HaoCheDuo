@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dl_screen"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/fl_content"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line_item" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000" >
+
+            <RadioGroup
+                android:id="@+id/rg_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_rg_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb_carmarket"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableTop="@drawable/selector_market"
+                    android:gravity="center"
+                    android:paddingBottom="6.0dip"
+                    android:paddingTop="6.0dip"
+                    android:text="车市"
+                    android:textColor="@drawable/select_text_color"
+                    android:textSize="10.0sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_orders"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:button="@null"
+                    android:drawableTop="@drawable/selector_cartcar"
+                    android:gravity="center"
+                    android:paddingBottom="6.0dip"
+                    android:paddingTop="6.0dip"
+                    android:text="购物车"
+                    android:textColor="@drawable/select_text_color"
+                    android:textSize="10.0sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_custom_service"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:button="@null"
+                    android:drawableTop="@drawable/server"
+                    android:gravity="center"
+                    android:paddingBottom="6.0dip"
+                    android:paddingTop="6.0dip"
+                    android:text="客服"
+                    android:textColor="@drawable/select_text_color"
+                    android:textSize="10.0sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_finance"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:button="@null"
+                    android:drawableTop="@drawable/selector_finance"
+                    android:gravity="center"
+                    android:paddingBottom="6.0dip"
+                    android:paddingTop="6.0dip"
+                    android:text="金融"
+                    android:textColor="@drawable/select_text_color"
+                    android:textSize="10.0sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_mycenter"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:button="@null"
+                    android:drawableTop="@drawable/selector_my"
+                    android:gravity="center"
+                    android:paddingBottom="6.0dip"
+                    android:paddingTop="6.0dip"
+                    android:text="我的"
+                    android:textColor="@drawable/select_text_color"
+                    android:textSize="10.0sp" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:orientation="horizontal" >
+
+                <!-- 显示提醒信息的button android:layout_weight=1  是3个butto，平分手机界面的宽度 -->
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:visibility="invisible" />
+                <!-- 占位置的button，以便适应不同分辨率手机 -->
+
+                <Button
+                    android:id="@+id/bt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left" />
+                <!-- 占位置的button，以便适应不同分辨率手机 -->
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_screen"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="right" />
+
+</android.support.v4.widget.DrawerLayout>

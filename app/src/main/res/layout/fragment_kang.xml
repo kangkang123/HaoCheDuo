@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_my_buy_right"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="right"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/my_buy_title"
+        layout="@layout/title_my" />
+
+    <RadioGroup
+        android:id="@+id/rg_brand"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <RadioButton
+            android:id="@+id/rb_hot_brand"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="热门品牌"
+            android:textColor="@drawable/select_text_color"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="60dp"
+            android:background="#e6e5ea" />
+
+        <RadioButton
+            android:id="@+id/rb_abc_orders"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:text="字母排序"
+            android:textColor="@drawable/select_text_color"
+            android:textSize="15sp" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_two_brand"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_brand_all"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="全部"
+            android:textColor="#333"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/iv_brand_tick"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:src="@drawable/tick"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e6e5ea" />
+
+    <ListView
+        android:id="@+id/lv_my_buy_right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#eeeeee"
+        android:dividerHeight="1px" >
+    </ListView>
+
+    <com.justlcw.letterlistview.letter.LetterListView
+        android:id="@+id/letterListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</LinearLayout>
