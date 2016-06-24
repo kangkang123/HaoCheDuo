@@ -185,6 +185,8 @@
         </activity>
         <activity android:name="cn.longchou.wholesale.activity.SexChooseActivity" >
         </activity>
+		<activity android:name="cn.longchou.wholesale.activity.ChangeNameActivity" >
+        </activity>
 
         <!-- 微信 -->
         <activity
