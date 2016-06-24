@@ -130,6 +130,11 @@ public class MyInformationActivity extends BaseActivity {
 		}
 		//设置登录名
 		mLoginName.setInformation("登录名");
+		mLoginName.setArrowVisible(true);
+		mLoginName.setChooseVisible(false);
+		mLoginName.setArrowText("保密");
+		mLoginName.setArrowTextVisible(true);
+		mLoginName.setArrowTextColor(Color.rgb(214, 214, 214));
 		
 		//设置姓名
 		mName.setInformation("姓名");
@@ -159,6 +164,7 @@ public class MyInformationActivity extends BaseActivity {
 		mCarCertaion.setOnClickListener(this);
 		mSex.setOnClickListener(this);
 		mRLHead.setOnClickListener(this);
+		mLoginName.setOnClickListener(this);
 
 	}
 
@@ -196,7 +202,10 @@ public class MyInformationActivity extends BaseActivity {
 			//显示窗口
 			menuWindow.showAtLocation(findViewById(R.id.main), Gravity.BOTTOM|Gravity.CENTER_HORIZONTAL, 0, 0); //设置layout在PopupWindow中显示的位置
 			break;
-		
+			case R.id.im_login_name:
+		        Intent intentChangeName=new Intent(MyInformationActivity.this,ChangeNameActivity.class);
+				startActivity(intentChangeName);
+				break;
 		default:
 			break;
 		}
