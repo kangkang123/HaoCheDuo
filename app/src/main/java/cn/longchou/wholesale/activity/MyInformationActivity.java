@@ -103,8 +103,8 @@ public class MyInformationActivity extends BaseActivity {
 			LoginValidate data = gson.fromJson(result,LoginValidate.class);
 			if(data!=null)
 			{
-				mLoginName.setChoose(data.phoneNumber);
-				
+//				mLoginName.setChoose(data.phoneNumber);
+				mLoginName.setArrowText(data.phoneNumber);
 				if(data.isCertified)
 				{
 					mConfirm.setText("已经验证");
@@ -132,7 +132,7 @@ public class MyInformationActivity extends BaseActivity {
 		mLoginName.setInformation("登录名");
 		mLoginName.setArrowVisible(true);
 		mLoginName.setChooseVisible(false);
-		mLoginName.setArrowText("保密");
+
 		mLoginName.setArrowTextVisible(true);
 		mLoginName.setArrowTextColor(Color.rgb(214, 214, 214));
 		

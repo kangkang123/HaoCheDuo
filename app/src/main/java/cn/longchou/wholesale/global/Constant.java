@@ -19,8 +19,9 @@ public class Constant {
 	
 //	public static String url="http://121.40.204.61:8099/longchoucar/";
 	
-	public static String url="http://120.55.82.202/";
+//	public static String url="http://120.55.82.202/";
 //	public static String url="http://10.0.0.14:8080/";
+	public static String url="http://121.40.49.29/";
 //	public static String url="http://10.0.2.137:8080/longchoucar/";
 //	public static String url="http://10.0.2.77:8080/";
 	
