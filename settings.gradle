@@ -1,4 +1,4 @@
-include ':app', 'Pushlib'
+include ':app', 'Pushlib', 'social_sdk_library_project'
 include ':DialogLibrary'
 include ':MeiqiaSdk'
 include ':ShareSDK'

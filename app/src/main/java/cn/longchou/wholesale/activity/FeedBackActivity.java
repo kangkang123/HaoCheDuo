@@ -14,6 +14,12 @@ import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.lidroid.xutils.HttpUtils;
+import com.lidroid.xutils.exception.HttpException;
+import com.lidroid.xutils.http.RequestParams;
+import com.lidroid.xutils.http.ResponseInfo;
+import com.lidroid.xutils.http.callback.RequestCallBack;
+import com.lidroid.xutils.http.client.HttpRequest;
 import com.meiqia.meiqiasdk.widget.MQRecorderKeyboardLayout;
 
 import java.util.ArrayList;
@@ -22,7 +28,9 @@ import java.util.List;
 import cn.longchou.wholesale.R;
 import cn.longchou.wholesale.adapter.PopWindowAdapter;
 import cn.longchou.wholesale.base.BaseActivity;
+import cn.longchou.wholesale.global.Constant;
 import cn.longchou.wholesale.utils.PreferUtils;
+import cn.longchou.wholesale.utils.UIUtils;
 
 /**
  * 
@@ -96,6 +104,23 @@ public class FeedBackActivity extends BaseActivity {
 			break;
 		case R.id.tv_feed_back_submit:
 
+			if(mList.size()==0)
+			{
+				mAdvice.setText("");
+			}else{
+				StringBuffer sb=new StringBuffer();
+				for(int i=0;i<mList.size();i++)
+				{
+					if(i<mList.size()-1)
+					{
+						sb.append(mList.get(i)+",");
+					}else{
+						sb.append(mList.get(i));
+					}
+				}
+				feedBack(sb.toString());
+			}
+
 			break;
 		case R.id.rl_feed_back:
 			if(isOpen){
@@ -156,11 +181,32 @@ public class FeedBackActivity extends BaseActivity {
 						}
 					}
 					mAdvice.setText(sb.toString());
+
 				}
+			}
+		});
+	}
+
+	public void feedBack(String result){
+		String phone = PreferUtils.getString(getApplicationContext(), "phone",null);
+		HttpUtils http=new HttpUtils();
+		String url= Constant.RequestFeedBack;
+		RequestParams params=new RequestParams();
+		params.addBodyParameter("content",result);
+		params.addBodyParameter("phone",phone);
+		http.send(HttpRequest.HttpMethod.POST, url, params, new RequestCallBack<String>() {
+			@Override
+			public void onSuccess(ResponseInfo<String> responseInfo) {
+				String result=responseInfo.result;
+				UIUtils.showToastSafe(result);
+
+			}
+
+			@Override
+			public void onFailure(HttpException e, String s) {
 
 			}
 		});
-
 	}
 
 }

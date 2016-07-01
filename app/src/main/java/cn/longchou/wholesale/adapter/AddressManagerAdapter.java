@@ -3,7 +3,8 @@ package cn.longchou.wholesale.adapter;
 import java.util.List;
 
 import cn.longchou.wholesale.R;
-import cn.longchou.wholesale.domain.AddressManager;
+import cn.longchou.wholesale.domain.AddressList;
+
 import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,8 +22,8 @@ import android.widget.TextView;
 public class AddressManagerAdapter extends BaseAdapter {
 
 	private Context context;
-	private List<AddressManager> list;
-	public AddressManagerAdapter(Context context,List<AddressManager> list) {
+	private List<AddressList.UserAddressBean> list;
+	public AddressManagerAdapter(Context context,List<AddressList.UserAddressBean> list) {
 		this.context=context;
 		this.list=list;
 	}
@@ -34,7 +35,7 @@ public class AddressManagerAdapter extends BaseAdapter {
 	}
 
 	@Override
-	public AddressManager getItem(int position) {
+	public AddressList.UserAddressBean getItem(int position) {
 		// TODO Auto-generated method stub
 		return list.get(position);
 	}
@@ -59,10 +60,11 @@ public class AddressManagerAdapter extends BaseAdapter {
 		}else{
 			holder=(ViewHolder) convertView.getTag();
 		}
-		AddressManager item = list.get(position);
-		holder.Name.setText(item.name);
+		AddressList.UserAddressBean item = list.get(position);
+		holder.Name.setText(item.userName);
 		holder.Phone.setText(item.phone);
-		holder.Address.setText(item.city);
+		String address=item.province+item.city+item.county+item.address;
+		holder.Address.setText(address);
 		return convertView;
 	}
 	

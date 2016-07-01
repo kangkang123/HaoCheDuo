@@ -1,12 +1,12 @@
 package cn.longchou.wholesale.activity;
 
-import com.google.gson.Gson;
-
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.provider.MediaStore;
 import android.text.TextUtils;
 import android.view.Gravity;
@@ -15,13 +15,41 @@ import android.view.View.OnClickListener;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import com.baidu.mapapi.map.Text;
+import com.bumptech.glide.Glide;
+import com.google.gson.Gson;
+import com.lidroid.xutils.HttpUtils;
+import com.lidroid.xutils.exception.HttpException;
+import com.lidroid.xutils.http.RequestParams;
+import com.lidroid.xutils.http.ResponseInfo;
+import com.lidroid.xutils.http.callback.RequestCallBack;
+import com.lidroid.xutils.http.client.HttpRequest;
+
+import java.io.ByteArrayOutputStream;
+import java.io.DataOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
+
 import cn.longchou.wholesale.R;
 import cn.longchou.wholesale.base.BaseActivity;
+import cn.longchou.wholesale.domain.HeadUpLoad;
 import cn.longchou.wholesale.domain.LoginValidate;
+import cn.longchou.wholesale.domain.SaveMyInfo;
 import cn.longchou.wholesale.global.Constant;
+import cn.longchou.wholesale.utils.IOUtils;
 import cn.longchou.wholesale.utils.PreferUtils;
 import cn.longchou.wholesale.utils.UIUtils;
+import cn.longchou.wholesale.utils.UploadUtil;
 import cn.longchou.wholesale.view.ItemMyInformation;
 import cn.longchou.wholesale.view.SelectPicPopupWindow;
 
@@ -47,6 +75,19 @@ public class MyInformationActivity extends BaseActivity {
 	private static final int REQUEST_CODE_PICK_IMAGE = 2;
 	// 相机获取图片
 	private static final int REQUEST_CODE_CAPTURE_CAMEIA = 3;
+	//修改登录名
+	private static final int REQUEST_CODE_CHANGE_NAME=4;
+
+	// 创建一个以当前系统时间为名称的文件，防止重复
+	private File tempFile = new File(Environment.getExternalStorageDirectory(),
+			getPhotoFileName());
+
+	// 使用系统当前日期加以调整作为照片的名称
+	private String getPhotoFileName() {
+		Date date = new Date(System.currentTimeMillis());
+		SimpleDateFormat sdf = new SimpleDateFormat("'PNG'_yyyyMMdd_HHmmss");
+		return sdf.format(date) + ".png";
+	}
 	
 	@Override
 	public void initView() {
@@ -95,39 +136,11 @@ public class MyInformationActivity extends BaseActivity {
 		mSex.setArrowText("保密");
 		mSex.setArrowTextVisible(true);
 		mSex.setArrowTextColor(Color.rgb(214, 214, 214));
+
+		getServerData();
 		
 		String result = PreferUtils.getString(getApplicationContext(), "myInfo", null);
-		if(!TextUtils.isEmpty(result))
-		{
-			Gson gson=new Gson();
-			LoginValidate data = gson.fromJson(result,LoginValidate.class);
-			if(data!=null)
-			{
-//				mLoginName.setChoose(data.phoneNumber);
-				mLoginName.setArrowText(data.phoneNumber);
-				if(data.isCertified)
-				{
-					mConfirm.setText("已经验证");
-					
-				}else{
-					mConfirm.setText("未验证");
-				}
-				
-				if(!data.isCertified)
-				{
-					mName.setChoose("待认证");
-				}else{
-					mName.setChoose(data.name);
-				}
-				
-				if(!data.isCertified)
-				{
-					mCarId.setChoose("待认证");
-				}else{
-					mCarId.setChoose(data.idNo);
-				}
-			}
-		}
+
 		//设置登录名
 		mLoginName.setInformation("登录名");
 		mLoginName.setArrowVisible(true);
@@ -152,6 +165,54 @@ public class MyInformationActivity extends BaseActivity {
 		mPhone.setChooseVisible(false);
 		mPhone.setArrowVisible(true);
 
+	}
+
+	private void getServerData() {
+		String token=PreferUtils.getString(getApplicationContext(),"token",null);
+		HttpUtils http=new HttpUtils();
+		String url=Constant.RequestGetMyInfo;
+		RequestParams params=new RequestParams();
+		params.addBodyParameter("Token",token);
+		http.send(HttpRequest.HttpMethod.POST, url, params, new RequestCallBack<String>() {
+			@Override
+			public void onSuccess(ResponseInfo<String> responseInfo) {
+				String result=responseInfo.result;
+				paraseData(result);
+			}
+
+			@Override
+			public void onFailure(HttpException e, String s) {
+
+			}
+		});
+	}
+
+	//解析个人信息的内容
+	private void paraseData(String result) {
+		if(!TextUtils.isEmpty(result))
+		{
+			Gson gson=new Gson();
+			SaveMyInfo data = gson.fromJson(result,SaveMyInfo.class);
+			if(data!=null)
+			{
+//				mLoginName.setChoose(data.phoneNumber);
+				if(TextUtils.isEmpty(data.nickName)){
+					String phone=PreferUtils.getString(getApplicationContext(),"phone",null);
+					mLoginName.setArrowText(phone);
+
+				}else{
+					mLoginName.setArrowText(data.nickName);
+					Constant.personName=data.nickName;
+				}
+				if(!TextUtils.isEmpty(data.sex)){
+					mSex.setArrowText(data.sex);
+					Constant.sexChoose=data.sex;
+				}
+				if(!TextUtils.isEmpty(data.imgUrl)){
+					Glide.with(MyInformationActivity.this).load(data.imgUrl).placeholder(R.drawable.me).into(mHead);
+				}
+			}
+		}
 	}
 
 	@Override
@@ -204,7 +265,7 @@ public class MyInformationActivity extends BaseActivity {
 			break;
 			case R.id.im_login_name:
 		        Intent intentChangeName=new Intent(MyInformationActivity.this,ChangeNameActivity.class);
-				startActivity(intentChangeName);
+				startActivityForResult(intentChangeName,REQUEST_CODE_CHANGE_NAME);
 				break;
 		default:
 			break;
@@ -235,14 +296,14 @@ public class MyInformationActivity extends BaseActivity {
     
     private void takePhoto() {
 		// 执行拍照前，应该先判断SD卡是否存在
-    	Intent getImageByCamera = new Intent(
+		Intent getImageByCamera = new Intent(
 				"android.media.action.IMAGE_CAPTURE");
 		startActivityForResult(getImageByCamera,
 				REQUEST_CODE_CAPTURE_CAMEIA);
 	}
-    
+
     private void pickPhoto() {
-    	// 本地相册
+		// 本地相册
 		Intent intent = new Intent(Intent.ACTION_PICK);
 		intent.setType("image/*");// 相片类型
 		startActivityForResult(intent, REQUEST_CODE_PICK_IMAGE);
@@ -253,48 +314,118 @@ public class MyInformationActivity extends BaseActivity {
 		// TODO Auto-generated method stub
 		super.onActivityResult(requestCode, resultCode, data);
 		switch (resultCode) {
-		case 1:
-			mSex.setArrowText(Constant.sexChoose);
+		    case 1:
+			     mSex.setArrowText(Constant.sexChoose);
+				 saveMyInfo("sex",Constant.sexChoose);
 			break;
+			case REQUEST_CODE_CHANGE_NAME:
+                if(!TextUtils.isEmpty(Constant.personName)){
+					mLoginName.setArrowText(Constant.personName);
+				}
+				break;
 
 		default:
 			break;
 		}
 		if(null!=data)
 		{
-			if (requestCode == REQUEST_CODE_PICK_IMAGE) 
-			{             
-				Uri uri = data.getData();  
+			if (requestCode == REQUEST_CODE_PICK_IMAGE)
+			{
+				Uri uri = data.getData();
 				try {
 					Bitmap bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), uri);
 					mHead.setImageBitmap(bitmap);
+					uploadFile(bitmap);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
-				
-			} 
-			else if (requestCode == REQUEST_CODE_CAPTURE_CAMEIA ) 
-			{             
-				Uri uri = data.getData();  
+
+			}
+			else if (requestCode == REQUEST_CODE_CAPTURE_CAMEIA )
+			{
+				Uri uri = data.getData();
 				if(uri == null)
-				{  
-					Bundle bundle = data.getExtras();    
-					if (bundle != null) 
-					{                 
-						Bitmap  photo = (Bitmap) bundle.get("data"); //get bitmap  
-						
+				{
+					Bundle bundle = data.getExtras();
+					if (bundle != null)
+					{
+						Bitmap  photo = (Bitmap) bundle.get("data"); //get bitmap
+
 						mHead.setImageBitmap(photo);
-						
-					} else {           
-						UIUtils.showToastSafe("error");       
-						return;        
-					}    
+						uploadFile(photo);
+
+					} else {
+						UIUtils.showToastSafe("error");
+						return;
+					}
 				}
-				else{  
-					//to do find the path of pic by uri  
-				}   
-			}  
+				else{
+					//to do find the path of pic by uri
+				}
+			}
 		}
 	}
 
+	//修改个人信息
+	private void saveMyInfo(String key,String value){
+		String token=PreferUtils.getString(getApplicationContext(),"token",null);
+		HttpUtils http=new HttpUtils();
+		String url=Constant.RequestSaveMyInfo;
+		RequestParams params=new RequestParams();
+		params.addBodyParameter(key,value);
+		params.addBodyParameter("Token",token);
+		http.send(HttpRequest.HttpMethod.POST, url, params, new RequestCallBack<String>() {
+			@Override
+			public void onSuccess(ResponseInfo<String> responseInfo) {
+				String result=responseInfo.result;
+				Gson gson=new Gson();
+				SaveMyInfo json = gson.fromJson(result, SaveMyInfo.class);
+				UIUtils.showToastSafe(json.msg);
+			}
+
+			@Override
+			public void onFailure(HttpException e, String s) {
+
+			}
+		});
+	}
+
+	//图片上传
+	private void uploadFile(final Bitmap bitmap)
+	{
+		new Thread(){
+			@Override
+			public void run() {
+				try {
+					ByteArrayOutputStream baos = new ByteArrayOutputStream();
+					bitmap.compress(Bitmap.CompressFormat.PNG, 100, baos);
+					FileOutputStream fis = new FileOutputStream(tempFile);
+					fis.write(baos.toByteArray());
+					fis.flush();
+					String token=PreferUtils.getString(getApplicationContext(),"token",null);
+					String url=Constant.RequestHead;
+					Map<String, String> params = new HashMap<String,String>();
+					params.put("Token", token);
+
+					Map<String, File> files = new HashMap<String,File>();
+					files.put("uploadifys", tempFile);
+					String request = UploadUtil.post(url, params, files);
+					Gson gson=new Gson();
+					HeadUpLoad json = gson.fromJson(request, HeadUpLoad.class);
+					if(json.urls.size()>0||json.urls!=null)
+					{
+						String imageUrl=json.urls.get(0);
+						saveMyInfo("imgUrl",imageUrl);
+//						UIUtils.showToastSafe("头像上传成功");
+					}else{
+						UIUtils.showToastSafe("头像上传失败");
+					}
+					System.out.print(request);
+
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		}.start();
+	}
 }

@@ -51,8 +51,6 @@ import cn.longchou.wholesale.utils.PreferUtils;
 import cn.longchou.wholesale.utils.SystemUtils;
 import cn.longchou.wholesale.utils.UIUtils;
 import cn.longchou.wholesale.view.ListViewForScrollView;
-import cn.sharesdk.framework.ShareSDK;
-import cn.sharesdk.onekeyshare.OnekeyShare;
 
 /**
  * 
@@ -124,6 +122,9 @@ public class VehicleDetailActivity extends BaseActivity {
 	private ImageView mScrollUp;
 	private TextView mEarnestText;
 	LinearLayout mLMaintenance;
+	private TextView mDail;
+	private TextView mCoupon;
+	private ImageView mShare;
 	Handler handler=new Handler(){
 		public void handleMessage(android.os.Message msg) {
 			switch (msg.what) {
@@ -137,8 +138,6 @@ public class VehicleDetailActivity extends BaseActivity {
 			}
 		};
 	};
-	private TextView mDail;
-	private TextView mShare;
 
 	@Override
 	public void initView() {
@@ -264,10 +263,14 @@ public class VehicleDetailActivity extends BaseActivity {
 		mScrollUp = (ImageView) findViewById(R.id.iv_car_detail_scrool_up);
 		
 		mDail = (TextView) findViewById(R.id.tv_dail_1);
-		
-		mShare = (TextView) findViewById(R.id.tv_car_detail_share);
+
+		//可使用优惠卷
+		mCoupon = (TextView) findViewById(R.id.tv_car_detail_coupon);
+
 
 		mLMaintenance = (LinearLayout) findViewById(R.id.ll_car_detail_maintenance);
+
+		mShare= (ImageView) findViewById(R.id.iv_my_title_login);
 	}
 
 	@Override
@@ -277,6 +280,9 @@ public class VehicleDetailActivity extends BaseActivity {
 		mOldMoney.getPaint().setFlags(Paint.STRIKE_THRU_TEXT_FLAG);
 
 		cars = (Cars) getIntent().getExtras().getSerializable("cars");
+
+		mCoupon.setText("可以使用优惠卷");
+		mShare.setVisibility(View.VISIBLE);
 		
 		//初始化关注的状态
 		setAttention();
@@ -740,42 +746,13 @@ public class VehicleDetailActivity extends BaseActivity {
 			mScrollView.fullScroll(ScrollView.FOCUS_UP);
 			break;
 			//分享
-		case R.id.tv_car_detail_share:
-			showShare();
+		case R.id.iv_my_title_login:
 			break;
 		default:
 			break;
 		}
 	}
 
-	private void showShare() {
-		ShareSDK.initSDK(this);
-		OnekeyShare oks = new OnekeyShare();
-		//关闭sso授权
-		oks.disableSSOWhenAuthorize();
-
-// 分享时Notification的图标和文字  2.5.9以后的版本不调用此方法
-		//oks.setNotification(R.drawable.ic_launcher, getString(R.string.app_name));
-		// title标题，印象笔记、邮箱、信息、微信、人人网和QQ空间使用
-		oks.setTitle("分享");
-		// titleUrl是标题的网络链接，仅在人人网和QQ空间使用
-		oks.setTitleUrl("http://sharesdk.cn");
-		// text是分享文本，所有平台都需要这个字段
-		oks.setText("我是分享文本");
-		// imagePath是图片的本地路径，Linked-In以外的平台都支持此参数
-		//oks.setImagePath("/sdcard/test.jpg");//确保SDcard下面存在此张图片
-		// url仅在微信（包括好友和朋友圈）中使用
-		oks.setUrl("http://sharesdk.cn");
-		// comment是我对这条分享的评论，仅在人人网和QQ空间使用
-		oks.setComment("我是测试评论文本");
-		// site是分享此内容的网站名称，仅在QQ空间使用
-		oks.setSite(getString(R.string.app_name));
-		// siteUrl是分享此内容的网站地址，仅在QQ空间使用
-		oks.setSiteUrl("http://sharesdk.cn");
-
-// 启动分享GUI
-		oks.show(this);
-	}
 
 
 	//关注的操作

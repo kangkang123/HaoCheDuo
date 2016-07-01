@@ -19,10 +19,10 @@ public class Constant {
 	
 //	public static String url="http://121.40.204.61:8099/longchoucar/";
 	
-//	public static String url="http://120.55.82.202/";
+	public static String url="http://120.55.82.202/";
 //	public static String url="http://10.0.0.14:8080/";
-	public static String url="http://121.40.49.29/";
-//	public static String url="http://10.0.2.137:8080/longchoucar/";
+//	public static String url="http://121.40.49.29/";
+//	public static String url="http://10.0.2.137:8080/";
 //	public static String url="http://10.0.2.77:8080/";
 	
 	
@@ -143,7 +143,34 @@ public class Constant {
 
 	//积分
 	public static String RequestScore=url+"app/api/u/v1.0/point/index?";
-	
+
+	//头像上传
+	public static String RequestHead=url+"app/api/personalInfo/v1.0/savePic";
+
+	//意见反馈
+	public static String RequestFeedBack=url+"app/api/advice/v1.0/save";
+
+	//保存个人信息
+	public static String RequestSaveMyInfo=url+"app/api/personalInfo/v1.0/save";
+
+	//获取个人信息
+	public static String RequestGetMyInfo=url+"app/api/personalInfo/v1.0/get";
+
+	//地址保存
+	public static String RequestAddressSave=url+"app/api/address/v1.0/save?";
+
+	//得到所有的地址
+	public static String RequestFindAddress=url+"app/api/address/v1.0/findUserAddress?";
+
+	//删除地址
+	public static String RequestDeleteAddress=url+"app/api/address/v1.0/delete/";
+
+	//修改地址
+	public static String RequestUpdateAddress=url+"app/api/address/v1.0/update/";
+
+
+
+
 //	public static String RequestNotifyUrl=url+"weixinPaySuccess/orderNo=";
 	
 //	public static String RequestAccessToken="https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wxbcc3051c0f5de023&secret=ff4c7880b9318342eba9dc00e6427557";
@@ -160,7 +187,9 @@ public class Constant {
 	// 商户收款账号
 	public static final String SELLER = "lczf@longchoucar.com";
 	// 商户私钥，pkcs8格式
-	public static final String RSA_PRIVATE = "MIICdgIBADANBgkqhkiG9w0BAQEFAASCAmAwggJcAgEAAoGBAMSDX867jSTQoLVaaAbyLAlFdGPFFky3aqwXBpr2tNhipsJ/jguSa21jGO02ilW0+zQ7DwSyAPHscr51f+tC0a8F+EZZZ3zz1qqQGqfWEGNSQZQLwNcOkgwZDrTZfbEZYoxsN5PEiDI4byP0dY9ruJ0EemAVr2UNHNHc4hchr+Q7AgMBAAECgYAQCsF5eOoOxVE5PMYdOwvJPfhAZMhrPtXgcojBgb5Fo9gFLLCF1VAbv+k7BCbK1FllbCTPt1BIb4r2bVUh+XRwdqdkgtxZiFBPIr5uvTj44yTYeNQT3/WxFnHdda2noo5sFw0tXvJFn2X6rqqxPm/vXvjeTKvhBjJqiTBar8cPgQJBAOGWRqhb9Bqbmenjah1wjNsIW2OzUt7jYQyZ71lF55XgfDBTcpE9x1K8GP+6ZjUo2qb/j+0HhZawURtIeMqokyECQQDfAar78AyxVL0+TiNrgNNNUb03xPD/FkMcZIHENTxwv3j0uYXGr+3U+ISPmun/GCRqSs5czeF3+1lxKy+DECfbAkBR2plg1ZzJWtSKTX5fmEtD3tBqaNMVFSRN0j1LA1Z4x6/IST80/Fmq552ajSQw/dX46ppqw2PxvaBwaeeKgYiBAkEAr3W0fj1E/1FZBGieXbsihbdGVVbS9yEg9Hnvz9zDDULZfFNr+gP58JMIWaTdbyQjoq3w5/vk5m4Q1YXRACH5+QJAdgiIwET3XX62r/Yd/+lyNyCn+EflchWPcaSw4AAdgzgSSJjwNETiHuXuD9yVA1/i8zdzDD0Qa/KNGf/5miRySw==";
+//	public static final String RSA_PRIVATE = "/jguSa21jGO02ilW0+zQ7DwSyAPHscr51f+tC0a8F+EZZZ3zz1qqQGqfWEGNSQZQLwNcOkgwZDrTZfbEZYoxsN5PEiDI4byP0dY9ruJ0EemAVr2UNHNHc4hchr+Q7AgMBAAECgYAQCsF5eOoOxVE5PMYdOwvJPfhAZMhrPtXgcojBgb5Fo9gFLLCF1VAbv+k7BCbK1FllbCTPt1BIb4r2bVUh+XRwdqdkgtxZiFBPIr5uvTj44yTYeNQT3/WxFnHdda2noo5sFw0tXvJFn2X6rqqxPm/vXvjeTKvhBjJqiTBar8cPgQJBAOGWRqhb9Bqbmenjah1wjNsIW2OzUt7jYQyZ71lF55XgfDBTcpE9x1K8GP+6ZjUo2qb/j+0HhZawURtIeMqokyECQQDfAar78AyxVL0+TiNrgNNNUb03xPD/FkMcZIHENTxwv3j0uYXGr+3U+ISPmun/GCRqSs5czeF3+1lxKy+DECfbAkBR2plg1ZzJWtSKTX5fmEtD3tBqaNMVFSRN0j1LA1Z4x6/IST80/Fmq552ajSQw/dX46ppqw2PxvaBwaeeKgYiBAkEAr3W0fj1E/1FZBGieXbsihbdGVVbS9yEg9Hnvz9zDDULZfFNr+gP58JMIWaTdbyQjoq3w5/vk5m4Q1YXRACH5+QJAdgiIwET3XX62r/Yd/+lyNyCn+EflchWPcaSw4AAdgzgSSJjwNETiHuXuD9yVA1/i8zdzDD0Qa/KNGf/5miRySw==";
+//	public static final String RSA_PRIVATE = "MIICdwIBADANBgkqhkMIICdgIBADANBgkqhkiG9w0BAQEFAASCAmAwggJcAgEAAoGBAMSDX867jSTQoLVaaAbyLAlFdGPFFky3aqwXBpr2tNhipsJiG9w0BAQEFAASCAmEwggJdAgEAAoGBAMaTRvCVdvXgDmjf4Z6qiZi3EXKCm5mzkaOsDBRDIpd2b4ZgYS2cY/3XaBmP3XGO4BESXUVemZzLpqR7cFfw7x77ZqWLjGGpO7OgHuVsa8PdG7gSkMa6ZwHT9HsC4Y/gWEFFZO2c4pKQWMjWjZagGySxp/+Tti30BaCvMOGfwhMnAgMBAAECgYBH3vZGDVLJGxccDivy6XZzt46xC2SV9NA5lQOqMcJLX6pt0GRbxcbLETO0TMWxXCztAOCRQvQGNA9UaPj4W1OwF7TO9YMETLm+8qYZzZDoy6BKVsKGTXwj0oor0vzpW8WFYCKQkNphFyxGteObDGu+iMsV1X0wDU+funXL1a83QQJBAOhl3KHo5fwz8I7u22Jj5kKJx57eu6kHNkztWZ6/adhXBV0EHB+704DMLmpxSDTzZ6mCM92TyM8eDiFptuML+YsCQQDavg7S0sc6C7GqTSyfSM+9hryoZanZI9xKsojFhIes11ivOKmQBzYFec3FiNOOOPmB9PEXPCaxYmF9ZmXBr6hVAkEApDM8dYWZ4d1M7aCkj1soWQECcyTKkP4Qhr/432o9PecWWgdKW72ZDdq2POz3aLpGFwVw4fDGJFkHAOKxnrBaSwJAF5IfWsxnt3OHI4jJZCieahfYwHSkBsf8dvgiENalIBTcc5UxgFmmkpR7feuukEbHbB+O0ygiKz8krjSYhnR9OQJBAKPHi2hWNM/ieoSPSZkWVy1TaB43e7gD8+t48oOIgQzJTnzIoSIpJ9vjEBLamtId3QV+7zRbyEDZ8worl5EKGSI=";
+	public static final String RSA_PRIVATE = "MIICdwIBADANBgkqhkiG9w0BAQEFAASCAmEwggJdAgEAAoGBAN5s93TktgEQSo0UN4AtN/3Rms8sgMPGJXRR1sQEjXg6oKSfDXn4XDitK9HS02+sFY0QDzotigE5YIVUuzG48i/u8oFWiDWT2AEe6jQPpXxjHRs18cruNMJpXmsKFZo5hzUnP5bJsC2EKCogh2/Xt1Z4CerfX7O+dMZBDlRpwmnjAgMBAAECgYBoo/sHE1JMzc1E8e3qb1uYHbQnI1iwwdd9EcNoFHw5w9svl2RPrXg1ccLbw8OVFfBNnPCM/j+es8+k6mfmzIujAMkwJuPnXx7VO71d4qPvrriC7WQe7+DdUT7UpfE6tKDrMseiSuyIgQ1WGAvs64Cuu0X2MeeZFyStj8JL0eB8gQJBAPKPG6fKGUmBnfuTCjhuHwu1zk+WOvVghcBB3+TABsSVGB0lVnl5eqIWnekLFTSWW4sjwEqkclJr27XOSCZ+3DcCQQDqwEA38SOSbEVsyM1gsykcFbepUksffWCDJg9Ke7LCsuD2BNIHBgwtenBoF3r9nm//uYRSU0a/FX9uSlBhL4G1AkEA7VCGxks9ImXmo9ThEwTq6xIdoFBjrt+Y/Nl2rOATvxIAXcPCL2djTGLEbNWjEahqOF/qKx1pnKpadC42+TL1UQJAS59TELJluy2Vz82AG76bZ6i3WZxhBuvkw1rnYh8nHwFw5s/2uLyB/8SJoX6u6DS5769bqQmaqMPMIUNfUW90YQJBAJwOkQXfZd7VcoyEqGEPxo+Q72AhhRJPAmUKCev56VZ1vQKOHuz08LmHDcQE8rrrwWjfXvL4KexxHg/R2VH8u0I=";
 	// 支付宝公钥
 	public static final String RSA_PUBLIC = "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDEg1/Ou40k0KC1WmgG8iwJRXRjxRZMt2qsFwaa9rTYYqbCf44LkmttYxjtNopVtPs0Ow8EsgDx7HK+dX/rQtGvBfhGWWd889aqkBqn1hBjUkGUC8DXDpIMGQ602X2xGWKMbDeTxIgyOG8j9HWPa7idBHpgFa9lDRzR3OIXIa/kOwIDAQAB";
 
@@ -519,5 +548,7 @@ public class Constant {
 	public static String cityChoose="";
 	//性别选择
 	public static String sexChoose="保密";
+	//个人的昵称
+	public static String personName="";
 	
 }

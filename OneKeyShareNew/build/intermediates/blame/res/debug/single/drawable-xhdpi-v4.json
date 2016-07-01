@@ -160,12 +160,12 @@
         "source": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\src\\main\\res\\drawable-xhdpi\\ssdk_oks_classic_tencentweibo.png"
     },
     {
-        "merged": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ssdk_title_div.png",
-        "source": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\exploded-aar\\WholeSale\\ShareSDK\\unspecified\\res\\drawable-xhdpi-v4\\ssdk_title_div.png"
-    },
-    {
         "merged": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ssdk_oks_classic_yixinmoments.png",
         "source": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\src\\main\\res\\drawable-xhdpi\\ssdk_oks_classic_yixinmoments.png"
+    },
+    {
+        "merged": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ssdk_title_div.png",
+        "source": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\exploded-aar\\WholeSale\\ShareSDK\\unspecified\\res\\drawable-xhdpi-v4\\ssdk_title_div.png"
     },
     {
         "merged": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ssdk_oks_classic_twitter.png",

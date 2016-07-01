@@ -16,16 +16,16 @@
         "source": "D:\\AndroidSpace\\WholeSale\\DialogLibrary\\build\\intermediates\\bundles\\debug\\res\\drawable\\progress_drawable.xml"
     },
     {
-        "merged": "D:\\AndroidSpace\\WholeSale\\DialogLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\bg_left_btn_press.xml",
-        "source": "D:\\AndroidSpace\\WholeSale\\DialogLibrary\\build\\intermediates\\bundles\\debug\\res\\drawable\\bg_left_btn_press.xml"
+        "merged": "D:\\AndroidSpace\\WholeSale\\DialogLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\selector_item_grouplist_bg.xml",
+        "source": "D:\\AndroidSpace\\WholeSale\\DialogLibrary\\build\\intermediates\\bundles\\debug\\res\\drawable\\selector_item_grouplist_bg.xml"
     },
     {
         "merged": "D:\\AndroidSpace\\WholeSale\\DialogLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\selector_right_btn_bg.xml",
         "source": "D:\\AndroidSpace\\WholeSale\\DialogLibrary\\build\\intermediates\\bundles\\debug\\res\\drawable\\selector_right_btn_bg.xml"
     },
     {
-        "merged": "D:\\AndroidSpace\\WholeSale\\DialogLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\selector_item_grouplist_bg.xml",
-        "source": "D:\\AndroidSpace\\WholeSale\\DialogLibrary\\build\\intermediates\\bundles\\debug\\res\\drawable\\selector_item_grouplist_bg.xml"
+        "merged": "D:\\AndroidSpace\\WholeSale\\DialogLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\bg_left_btn_press.xml",
+        "source": "D:\\AndroidSpace\\WholeSale\\DialogLibrary\\build\\intermediates\\bundles\\debug\\res\\drawable\\bg_left_btn_press.xml"
     },
     {
         "merged": "D:\\AndroidSpace\\WholeSale\\DialogLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\dialog_confirm.xml",

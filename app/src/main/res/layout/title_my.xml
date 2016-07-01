@@ -45,4 +45,15 @@
         android:clickable="true"
         android:text="登录" />
 
+    <ImageView
+        android:id="@+id/iv_my_title_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingRight="15dp"
+        android:src="@drawable/share"
+        android:visibility="invisible"
+        />
+
 </RelativeLayout>

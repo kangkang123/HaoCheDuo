@@ -1,11 +1,11 @@
 [
     {
-        "merged": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ssdk_oks_classic_foursquare.png",
-        "source": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ssdk_oks_classic_foursquare.png"
-    },
-    {
         "merged": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ssdk_oks_classic_renren.png",
         "source": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ssdk_oks_classic_renren.png"
+    },
+    {
+        "merged": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ssdk_oks_classic_foursquare.png",
+        "source": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ssdk_oks_classic_foursquare.png"
     },
     {
         "merged": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ssdk_oks_classic_instapaper.png",

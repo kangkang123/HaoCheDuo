@@ -28,12 +28,12 @@
         "source": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\mq_emoji_12.png"
     },
     {
-        "merged": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\mq_emoji_2.png",
-        "source": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\mq_emoji_2.png"
-    },
-    {
         "merged": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\mq_emoji_29.png",
         "source": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\mq_emoji_29.png"
+    },
+    {
+        "merged": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\mq_emoji_2.png",
+        "source": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\mq_emoji_2.png"
     },
     {
         "merged": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\mq_emoji_31.png",

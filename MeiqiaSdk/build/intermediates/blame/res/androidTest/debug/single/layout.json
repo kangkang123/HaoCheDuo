@@ -20,12 +20,12 @@
         "source": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\mq_item_msg_tip.xml"
     },
     {
-        "merged": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\mq_pw_photo_folder.xml",
-        "source": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\mq_pw_photo_folder.xml"
-    },
-    {
         "merged": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\mq_item_photo_folder.xml",
         "source": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\mq_item_photo_folder.xml"
+    },
+    {
+        "merged": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\mq_pw_photo_folder.xml",
+        "source": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\mq_pw_photo_folder.xml"
     },
     {
         "merged": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\mq_dialog_evaluate.xml",
@@ -92,12 +92,12 @@
         "source": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\mq_activity_conversation.xml"
     },
     {
-        "merged": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\mq_item_useless_redirect.xml",
-        "source": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\mq_item_useless_redirect.xml"
-    },
-    {
         "merged": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\mq_item_chat_left.xml",
         "source": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\mq_item_chat_left.xml"
+    },
+    {
+        "merged": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\mq_item_useless_redirect.xml",
+        "source": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\bundles\\debug\\res\\layout\\mq_item_useless_redirect.xml"
     },
     {
         "merged": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\mq_item_redirect_queue.xml",

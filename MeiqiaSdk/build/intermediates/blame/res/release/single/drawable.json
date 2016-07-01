@@ -116,11 +116,11 @@
         "source": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\src\\main\\res\\drawable\\mq_shape_evaluate_angry.xml"
     },
     {
-        "merged": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\res\\merged\\release\\drawable\\mq_shape_agent_status_online.xml",
-        "source": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\src\\main\\res\\drawable\\mq_shape_agent_status_online.xml"
-    },
-    {
         "merged": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\res\\merged\\release\\drawable\\mq_rotate_progress_bar.xml",
         "source": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\src\\main\\res\\drawable\\mq_rotate_progress_bar.xml"
+    },
+    {
+        "merged": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\res\\merged\\release\\drawable\\mq_shape_agent_status_online.xml",
+        "source": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\src\\main\\res\\drawable\\mq_shape_agent_status_online.xml"
     }
 ]
