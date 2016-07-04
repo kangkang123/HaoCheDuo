@@ -60,12 +60,12 @@
         "source": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\src\\main\\res\\drawable\\mq_shape_cursor.xml"
     },
     {
-        "merged": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\res\\merged\\release\\drawable\\mq_anim_voice_left_playing.xml",
-        "source": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\src\\main\\res\\drawable\\mq_anim_voice_left_playing.xml"
-    },
-    {
         "merged": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\res\\merged\\release\\drawable\\mq_selector_item_center.xml",
         "source": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\src\\main\\res\\drawable\\mq_selector_item_center.xml"
+    },
+    {
+        "merged": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\res\\merged\\release\\drawable\\mq_anim_voice_left_playing.xml",
+        "source": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\src\\main\\res\\drawable\\mq_anim_voice_left_playing.xml"
     },
     {
         "merged": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\res\\merged\\release\\drawable\\mq_shape_send_back_normal.xml",

@@ -14,6 +14,7 @@ import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.google.gson.Gson;
 import com.lidroid.xutils.HttpUtils;
 import com.lidroid.xutils.exception.HttpException;
 import com.lidroid.xutils.http.RequestParams;
@@ -28,6 +29,7 @@ import java.util.List;
 import cn.longchou.wholesale.R;
 import cn.longchou.wholesale.adapter.PopWindowAdapter;
 import cn.longchou.wholesale.base.BaseActivity;
+import cn.longchou.wholesale.domain.LoginValidate;
 import cn.longchou.wholesale.global.Constant;
 import cn.longchou.wholesale.utils.PreferUtils;
 import cn.longchou.wholesale.utils.UIUtils;
@@ -104,22 +106,12 @@ public class FeedBackActivity extends BaseActivity {
 			break;
 		case R.id.tv_feed_back_submit:
 
-			if(mList.size()==0)
-			{
-				mAdvice.setText("");
+			if(TextUtils.isEmpty(mAdvice.getText().toString().trim())){
+				UIUtils.showToastSafe("请输入反馈内容");
 			}else{
-				StringBuffer sb=new StringBuffer();
-				for(int i=0;i<mList.size();i++)
-				{
-					if(i<mList.size()-1)
-					{
-						sb.append(mList.get(i)+",");
-					}else{
-						sb.append(mList.get(i));
-					}
-				}
-				feedBack(sb.toString());
+				feedBack(mAdvice.getText().toString().trim());
 			}
+
 
 			break;
 		case R.id.rl_feed_back:
@@ -198,8 +190,11 @@ public class FeedBackActivity extends BaseActivity {
 			@Override
 			public void onSuccess(ResponseInfo<String> responseInfo) {
 				String result=responseInfo.result;
-				UIUtils.showToastSafe(result);
-
+				Gson gson=new Gson();
+				LoginValidate loginValidate = gson.fromJson(result, LoginValidate.class);
+				if(TextUtils.isEmpty(loginValidate.errorMsg)){
+					UIUtils.showToastSafe("反馈成功");
+				}
 			}
 
 			@Override

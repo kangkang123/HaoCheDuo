@@ -124,12 +124,12 @@
         "source": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\mq_ic_download.png"
     },
     {
-        "merged": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\mq_voice_left_normal.png",
-        "source": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\mq_voice_left_normal.png"
-    },
-    {
         "merged": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\mq_ic_back_white.png",
         "source": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\mq_ic_back_white.png"
+    },
+    {
+        "merged": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\mq_voice_left_normal.png",
+        "source": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\mq_voice_left_normal.png"
     },
     {
         "merged": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\mq_ic_evaluate_active.png",

@@ -142,7 +142,7 @@ public class AddressManagerActivity extends BaseActivity {
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		super.onActivityResult(requestCode, resultCode, data);
-		switch (resultCode){
+		switch (requestCode){
 			case 1:
 				getServerData();
 				break;

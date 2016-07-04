@@ -16,12 +16,12 @@
         "source": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\src\\main\\res\\drawable-xhdpi\\ssdk_oks_classic_bluetooth.png"
     },
     {
-        "merged": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ssdk_oks_classic_laiwangmoments.png",
-        "source": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\src\\main\\res\\drawable-xhdpi\\ssdk_oks_classic_laiwangmoments.png"
-    },
-    {
         "merged": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ssdk_oks_classic_check_checked.png",
         "source": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\src\\main\\res\\drawable-xhdpi\\ssdk_oks_classic_check_checked.png"
+    },
+    {
+        "merged": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ssdk_oks_classic_laiwangmoments.png",
+        "source": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\src\\main\\res\\drawable-xhdpi\\ssdk_oks_classic_laiwangmoments.png"
     },
     {
         "merged": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ssdk_oks_classic_renren.png",

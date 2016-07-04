@@ -20,12 +20,12 @@
         "source": "D:\\AndroidSpace\\WholeSale\\social_sdk_library_project\\res\\layout\\umeng_socialize_full_alert_dialog_item.xml"
     },
     {
-        "merged": "D:\\AndroidSpace\\WholeSale\\social_sdk_library_project\\build\\intermediates\\res\\merged\\debug\\layout\\umeng_socialize_failed_load_page.xml",
-        "source": "D:\\AndroidSpace\\WholeSale\\social_sdk_library_project\\res\\layout\\umeng_socialize_failed_load_page.xml"
-    },
-    {
         "merged": "D:\\AndroidSpace\\WholeSale\\social_sdk_library_project\\build\\intermediates\\res\\merged\\debug\\layout\\umeng_socialize_base_alert_dialog.xml",
         "source": "D:\\AndroidSpace\\WholeSale\\social_sdk_library_project\\res\\layout\\umeng_socialize_base_alert_dialog.xml"
+    },
+    {
+        "merged": "D:\\AndroidSpace\\WholeSale\\social_sdk_library_project\\build\\intermediates\\res\\merged\\debug\\layout\\umeng_socialize_failed_load_page.xml",
+        "source": "D:\\AndroidSpace\\WholeSale\\social_sdk_library_project\\res\\layout\\umeng_socialize_failed_load_page.xml"
     },
     {
         "merged": "D:\\AndroidSpace\\WholeSale\\social_sdk_library_project\\build\\intermediates\\res\\merged\\debug\\layout\\umeng_socialize_base_alert_dialog_button.xml",
@@ -40,12 +40,12 @@
         "source": "D:\\AndroidSpace\\WholeSale\\social_sdk_library_project\\res\\layout\\umeng_socialize_full_curtain.xml"
     },
     {
-        "merged": "D:\\AndroidSpace\\WholeSale\\social_sdk_library_project\\build\\intermediates\\res\\merged\\debug\\layout\\umeng_socialize_simple_spinner_item.xml",
-        "source": "D:\\AndroidSpace\\WholeSale\\social_sdk_library_project\\res\\layout\\umeng_socialize_simple_spinner_item.xml"
-    },
-    {
         "merged": "D:\\AndroidSpace\\WholeSale\\social_sdk_library_project\\build\\intermediates\\res\\merged\\debug\\layout\\umeng_socialize_titile_bar.xml",
         "source": "D:\\AndroidSpace\\WholeSale\\social_sdk_library_project\\res\\layout\\umeng_socialize_titile_bar.xml"
+    },
+    {
+        "merged": "D:\\AndroidSpace\\WholeSale\\social_sdk_library_project\\build\\intermediates\\res\\merged\\debug\\layout\\umeng_socialize_simple_spinner_item.xml",
+        "source": "D:\\AndroidSpace\\WholeSale\\social_sdk_library_project\\res\\layout\\umeng_socialize_simple_spinner_item.xml"
     },
     {
         "merged": "D:\\AndroidSpace\\WholeSale\\social_sdk_library_project\\build\\intermediates\\res\\merged\\debug\\layout\\umeng_socialize_facebook_login_activity_layout.xml",

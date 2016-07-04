@@ -21,9 +21,12 @@ import cn.longchou.wholesale.service.NotificationService;
 import cn.longchou.wholesale.utils.PreferUtils;
 import cn.longchou.wholesale.utils.UIUtils;
 import cn.longchou.wholesale.view.BadgeView;
+
+import android.Manifest;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
@@ -91,7 +94,7 @@ public class MainActivity extends BaseActivity {
         mDrawerLayout = (DrawerLayout) findViewById(R.id.dl_screen);
         Intent intent=new Intent(this,NotificationService.class);
         startService(intent);
-        
+
 	}
 
 	//退出应用是保存状态，返回键

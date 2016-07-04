@@ -16,6 +16,7 @@
             <option value="$PROJECT_DIR$/ShareSDK" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/social_sdk_library_project" />
+            <option value="$PROJECT_DIR$/wheel" />
           </set>
         </option>
         <option name="myModules">
@@ -28,6 +29,7 @@
             <option value="$PROJECT_DIR$/ShareSDK" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/social_sdk_library_project" />
+            <option value="$PROJECT_DIR$/wheel" />
           </set>
         </option>
       </GradleProjectSettings>

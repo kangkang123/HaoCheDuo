@@ -128,12 +128,12 @@
         "source": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\src\\main\\res\\drawable-xxhdpi\\mq_voice_want_cancel.png"
     },
     {
-        "merged": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\mq_redirect_queue_00.png",
-        "source": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\src\\main\\res\\drawable-xxhdpi\\mq_redirect_queue_00.png"
-    },
-    {
         "merged": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\mq_ic_cb_checked.png",
         "source": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\src\\main\\res\\drawable-xxhdpi\\mq_ic_cb_checked.png"
+    },
+    {
+        "merged": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\mq_redirect_queue_00.png",
+        "source": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\src\\main\\res\\drawable-xxhdpi\\mq_redirect_queue_00.png"
     },
     {
         "merged": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\mq_ic_camera_normal.png",

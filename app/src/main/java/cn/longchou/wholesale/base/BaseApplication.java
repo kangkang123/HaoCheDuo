@@ -31,6 +31,7 @@ import com.umeng.message.UmengMessageHandler;
 import com.umeng.message.UmengNotificationClickHandler;
 import com.umeng.message.entity.UMessage;
 
+
 import java.util.ArrayList;
 
 public class BaseApplication extends Application {
@@ -75,7 +76,8 @@ public class BaseApplication extends Application {
         WriteLog.getInstance().init(); // 初始化日志
         SDKInitializer.initialize(getApplicationContext()); 
 	}
-	
+
+
 	public static BaseApplication getApplication(){
 		return mContext;
 	}

@@ -8,12 +8,12 @@
         "source": "D:\\AndroidSpace\\WholeSale\\DialogLibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\dialog_alert.xml"
     },
     {
-        "merged": "D:\\AndroidSpace\\WholeSale\\DialogLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\confirm_list.xml",
-        "source": "D:\\AndroidSpace\\WholeSale\\DialogLibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\confirm_list.xml"
-    },
-    {
         "merged": "D:\\AndroidSpace\\WholeSale\\DialogLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\dialog_list.xml",
         "source": "D:\\AndroidSpace\\WholeSale\\DialogLibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\dialog_list.xml"
+    },
+    {
+        "merged": "D:\\AndroidSpace\\WholeSale\\DialogLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\confirm_list.xml",
+        "source": "D:\\AndroidSpace\\WholeSale\\DialogLibrary\\build\\intermediates\\bundles\\debug\\res\\layout\\confirm_list.xml"
     },
     {
         "merged": "D:\\AndroidSpace\\WholeSale\\DialogLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\dialog_finished.xml",

@@ -88,12 +88,12 @@
         "source": "D:\\AndroidSpace\\WholeSale\\social_sdk_library_project\\res\\drawable\\umeng_socialize_yixin.png"
     },
     {
-        "merged": "D:\\AndroidSpace\\WholeSale\\social_sdk_library_project\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_socialize_douban_off.png",
-        "source": "D:\\AndroidSpace\\WholeSale\\social_sdk_library_project\\res\\drawable\\umeng_socialize_douban_off.png"
-    },
-    {
         "merged": "D:\\AndroidSpace\\WholeSale\\social_sdk_library_project\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_socialize_facebook.png",
         "source": "D:\\AndroidSpace\\WholeSale\\social_sdk_library_project\\res\\drawable\\umeng_socialize_facebook.png"
+    },
+    {
+        "merged": "D:\\AndroidSpace\\WholeSale\\social_sdk_library_project\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_socialize_douban_off.png",
+        "source": "D:\\AndroidSpace\\WholeSale\\social_sdk_library_project\\res\\drawable\\umeng_socialize_douban_off.png"
     },
     {
         "merged": "D:\\AndroidSpace\\WholeSale\\social_sdk_library_project\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_background.xml",
@@ -328,12 +328,12 @@
         "source": "D:\\AndroidSpace\\WholeSale\\social_sdk_library_project\\res\\drawable\\umeng_socialize_kakao.png"
     },
     {
-        "merged": "D:\\AndroidSpace\\WholeSale\\social_sdk_library_project\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_socialize_share_video.png",
-        "source": "D:\\AndroidSpace\\WholeSale\\social_sdk_library_project\\res\\drawable\\umeng_socialize_share_video.png"
-    },
-    {
         "merged": "D:\\AndroidSpace\\WholeSale\\social_sdk_library_project\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_socialize_sina_on.png",
         "source": "D:\\AndroidSpace\\WholeSale\\social_sdk_library_project\\res\\drawable\\umeng_socialize_sina_on.png"
+    },
+    {
+        "merged": "D:\\AndroidSpace\\WholeSale\\social_sdk_library_project\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_socialize_share_video.png",
+        "source": "D:\\AndroidSpace\\WholeSale\\social_sdk_library_project\\res\\drawable\\umeng_socialize_share_video.png"
     },
     {
         "merged": "D:\\AndroidSpace\\WholeSale\\social_sdk_library_project\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_socialize_ynote_gray.png",

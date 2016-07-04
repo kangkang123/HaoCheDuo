@@ -52,12 +52,12 @@
         "source": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\bundles\\debug\\res\\drawable\\mq_shape_send_back_pressed.xml"
     },
     {
-        "merged": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\mq_selector_ic_image.xml",
-        "source": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\bundles\\debug\\res\\drawable\\mq_selector_ic_image.xml"
-    },
-    {
         "merged": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\mq_shape_agent_status_offline.xml",
         "source": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\bundles\\debug\\res\\drawable\\mq_shape_agent_status_offline.xml"
+    },
+    {
+        "merged": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\mq_selector_ic_image.xml",
+        "source": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\bundles\\debug\\res\\drawable\\mq_selector_ic_image.xml"
     },
     {
         "merged": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\mq_selector_evaluate_et.xml",
