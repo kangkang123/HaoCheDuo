@@ -113,9 +113,12 @@ public class FinancialLoansActivity extends BaseActivity {
 			mXF.setChecked(true);
 			
 		}
+		if(mKR.isChecked()||mSC.isChecked()){
+			mSX.setChecked(true);
+		}
 		
 		//获取是否授信
-		getIsTrust();
+//		getIsTrust();
 		
 	}
 
@@ -168,18 +171,24 @@ public class FinancialLoansActivity extends BaseActivity {
 					boolean isChecked) {
 				
 				if(isChecked){
-					
+//					if((!mKR.isChecked())&&(!mSC.isChecked())){
+//						mSC.setChecked(false);
+//					}
 				}else{
-					if(!isTrust && (mKR.isChecked() || mSC.isChecked()))
+//					if(!isTrust && (mKR.isChecked() || mSC.isChecked()))
+					if((mKR.isChecked() || mSC.isChecked()))
 					{
 						mSX.setChecked(true);
 					}else{
 						mSX.setChecked(false);
 					}
+//					if((!mKR.isChecked())&&(!mSC.isChecked())){
+//						mSX.setChecked(false);
+//					}
 				}
 			}
 		});
-		
+		mSX.setOnClickListener(this);
 		//库容的点击事件
 		mKR.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 			
@@ -188,14 +197,17 @@ public class FinancialLoansActivity extends BaseActivity {
 					boolean isChecked) {
 				// TODO Auto-generated method stub
 				if(isChecked){
-					if(isTrust)
-					{
-						mSX.setChecked(false);
-					}else{
+//					if(isTrust)
+//					{
+//						mSX.setChecked(false);
+//					}else{
 						mSX.setChecked(true);
-					}
+//					}
 				}else{
 					//未选中
+					if(!mSC.isChecked()){
+						mSX.setChecked(false);
+					}
 				}
 			}
 		});
@@ -208,14 +220,17 @@ public class FinancialLoansActivity extends BaseActivity {
 					boolean isChecked) {
 				// TODO Auto-generated method stub
 				if(isChecked){
-					if(isTrust)
-					{
-						mSX.setChecked(false);
-					}else{
+//					if(isTrust)
+//					{
+//						mSX.setChecked(false);
+//					}else{
 						mSX.setChecked(true);
-					}
+//					}
 				}else{
 					//未选中
+					if(!mKR.isChecked()){
+						mSX.setChecked(false);
+					}
 				}
 			}
 		});
@@ -259,6 +274,18 @@ public class FinancialLoansActivity extends BaseActivity {
 				commitTrust(name,phone);
 			}
 			break;
+		case R.id.tb_sx:
+//			UIUtils.showToastSafe("shoux");
+//			if((!mKR.isChecked())&&(!mSC.isChecked())){
+//				mSC.setChecked(false);
+//			}
+			boolean kr=mKR.isChecked();
+			boolean sc= mSC.isChecked();
+
+			if(!kr&&!sc){
+				mSX.setChecked(false);
+			}
+				break;
 		default:
 			break;
 		}
@@ -280,7 +307,8 @@ public class FinancialLoansActivity extends BaseActivity {
 		String token = PreferUtils.getString(getApplicationContext(), "token", null);
 		params.addBodyParameter("c", "as");
 		params.addBodyParameter("Token", token);
-		params.addBodyParameter("trust", isTrust+"");
+//		params.addBodyParameter("trust", isTrust+"");
+		params.addBodyParameter("trust", mSX.isChecked()+"");
 		params.addBodyParameter("kucun", mKR.isChecked()+"");
 		params.addBodyParameter("shouche", mSC.isChecked()+"");
 		params.addBodyParameter("xiaofei", mXF.isChecked()+"");

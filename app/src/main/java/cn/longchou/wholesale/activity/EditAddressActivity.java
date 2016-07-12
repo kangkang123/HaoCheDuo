@@ -21,7 +21,9 @@ import org.json.JSONObject;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import cn.longchou.wholesale.R;
@@ -99,6 +101,7 @@ public class EditAddressActivity extends BaseActivity implements OnWheelChangedL
 	 * 当前区的名称
 	 */
 	private String mCurrentAreaName ="";
+
 
 	@Override
 	public void initView() {
@@ -385,13 +388,21 @@ public class EditAddressActivity extends BaseActivity implements OnWheelChangedL
 			url= Constant.RequestAddressSave;
 		}
 
+//		List<String> list = Constant.getAddressCitys();
+//        System.out.print(list.toString());
 		params.addBodyParameter("Token",token);
 		params.addBodyParameter("userName",name);
 		params.addBodyParameter("phone",phone);
 		params.addBodyParameter("postCode",code);
 		params.addBodyParameter("province",province);
 		params.addBodyParameter("city",city);
-		params.addBodyParameter("county",county);
+		//当不包含直辖市的时候，传递市区。
+		String count=county;
+        if(province.equals("天津")||province.equals("北京")||province.equals("上海")||province.equals("重庆")
+				||province.equals("澳门")||province.equals("香港")){
+			count=" ";
+		}
+		params.addBodyParameter("county",count);
 		params.addBodyParameter("address",cityDetail);
 		http.send(HttpRequest.HttpMethod.POST, url, params, new RequestCallBack<String>() {
 			@Override
@@ -425,7 +436,11 @@ public class EditAddressActivity extends BaseActivity implements OnWheelChangedL
 		{
 			mCurrentAreaName = mAreaDatasMap.get(mCurrentCityName)[newValue];
 		}
+		if(Constant.getAddressCitys().contains(mCurrentProviceName)){
+			mcity.setText(mCurrentProviceName + mCurrentCityName);
 
-		mcity.setText(mCurrentProviceName + mCurrentCityName + mCurrentAreaName);
+		}else{
+			mcity.setText(mCurrentProviceName + mCurrentCityName + mCurrentAreaName);
+		}
 	}
 }

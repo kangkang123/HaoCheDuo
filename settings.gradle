@@ -1,6 +1,6 @@
 include ':app', 'Pushlib', 'social_sdk_library_project'
 include ':DialogLibrary'
 include ':MeiqiaSdk'
+include ':wheel'
 include ':ShareSDK'
 include ':OneKeyShareNew'
-include ':wheel'

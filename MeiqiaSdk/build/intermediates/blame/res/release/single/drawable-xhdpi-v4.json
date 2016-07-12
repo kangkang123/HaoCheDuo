@@ -1,11 +1,11 @@
 [
     {
-        "merged": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\mq_emoji_25.png",
-        "source": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\src\\main\\res\\drawable-xhdpi\\mq_emoji_25.png"
-    },
-    {
         "merged": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\mq_emoji_23.png",
         "source": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\src\\main\\res\\drawable-xhdpi\\mq_emoji_23.png"
+    },
+    {
+        "merged": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\mq_emoji_25.png",
+        "source": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\src\\main\\res\\drawable-xhdpi\\mq_emoji_25.png"
     },
     {
         "merged": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\mq_emoji_1.png",
@@ -112,12 +112,12 @@
         "source": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\src\\main\\res\\drawable-xhdpi\\mq_emoji_33.png"
     },
     {
-        "merged": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\mq_loading_2.png",
-        "source": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\src\\main\\res\\drawable-xhdpi\\mq_loading_2.png"
-    },
-    {
         "merged": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\mq_loading_3.png",
         "source": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\src\\main\\res\\drawable-xhdpi\\mq_loading_3.png"
+    },
+    {
+        "merged": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\mq_loading_2.png",
+        "source": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\src\\main\\res\\drawable-xhdpi\\mq_loading_2.png"
     },
     {
         "merged": "D:\\AndroidSpace\\WholeSale\\MeiqiaSdk\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\mq_emoji_22.png",

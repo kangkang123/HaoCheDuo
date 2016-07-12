@@ -86,6 +86,8 @@ public class HomePage {
 		public boolean inCart;
 		//是否关注
 		public boolean isFollow;
+		//副标题
+		public String subTitle;
 	}
 
 	public static com.kang.taobaohead.headview.Notification cloneNotification(

@@ -15,6 +15,7 @@
         android:clickable="true"
         android:gravity="center" >
 
+
         <ImageView
             android:id="@+id/iv_my_head_login"
             android:layout_width="50dp"
@@ -22,7 +23,17 @@
             android:layout_centerVertical="true"
             android:layout_marginRight="15dp"
             android:layout_toLeftOf="@+id/iv_head_arrow"
-            android:src="@drawable/me" />
+            android:src="@drawable/me"
+            android:visibility="gone"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/me"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
 
         <ImageView
             android:id="@+id/iv_head_arrow"

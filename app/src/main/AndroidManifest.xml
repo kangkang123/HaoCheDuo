@@ -49,6 +49,8 @@
     <uses-permission android:name="android.permission.USE_CREDENTIALS" />
 
 
+
+
     <application
         android:name=".base.BaseApplication"
         android:allowBackup="true"
@@ -199,7 +201,10 @@
         <activity
             android:name="cn.longchou.wholesale.wxapi.WXEntryActivity"
             android:exported="true"
-            android:launchMode="singleTop" >
+            android:launchMode="singleTop"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
@@ -208,6 +213,7 @@
                 <data android:scheme="wxbcc3051c0f5de023" />
             </intent-filter>
         </activity>
+
 
         <receiver
             android:name="cn.longchou.wholesale.simcpux.AppRegister"
@@ -337,7 +343,7 @@
             </intent-filter>
 
             <!-- 调用新浪原生SDK，需要注册的回调activity -->
-            <intent-filter>
+           <intent-filter>
                 <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
 
                 <category android:name="android.intent.category.DEFAULT" />
@@ -345,12 +351,7 @@
         </activity>
 
         <!-- 微信分享回调 -->
-        <activity
-            android:name=".wxapi.WEntryActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:exported="true"
-            android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
 
 
         <!-- 支付宝分享回调 -->
@@ -359,6 +360,13 @@
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:exported="true"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!--高德地图-->
+        <service android:name="com.amap.api.location.APSService"></service>
+
+        <meta-data android:name="com.amap.api.v2.apikey" android:value="3550b00beb09429aa458a1bfa25fe9a6">
+
+        </meta-data>
 
     </application>
 

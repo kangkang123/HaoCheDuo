@@ -2,6 +2,9 @@ package cn.longchou.wholesale.wxapi;
 
 import cn.longchou.wholesale.R;
 import cn.longchou.wholesale.global.Constant;
+import cn.sharesdk.wechat.utils.WXAppExtendObject;
+import cn.sharesdk.wechat.utils.WXMediaMessage;
+import cn.sharesdk.wechat.utils.WechatHandlerActivity;
 
 import com.tencent.mm.sdk.constants.ConstantsAPI;
 import com.tencent.mm.sdk.modelbase.BaseReq;
@@ -17,43 +20,14 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
 
-public class WXEntryActivity extends Activity implements IWXAPIEventHandler {
+public class WXEntryActivity extends WechatHandlerActivity implements IWXAPIEventHandler {
 	
 	private IWXAPI api;
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	@Override
 	protected void onStart() {
+		super.onStart();
 		Log.i("227", "wxentryactivity");
 	}
 
@@ -129,6 +103,19 @@ public class WXEntryActivity extends Activity implements IWXAPIEventHandler {
 		}
 
 		Toast.makeText(this, result, Toast.LENGTH_LONG).show();
+	}
+
+	public void onGetMessageFromWXReq(WXMediaMessage msg) {
+		Intent iLaunchMyself = getPackageManager().getLaunchIntentForPackage(getPackageName());
+		startActivity(iLaunchMyself);
+	}
+
+	public void onShowMessageFromWXReq(WXMediaMessage msg) {
+		if (msg != null && msg.mediaObject != null
+				&& (msg.mediaObject instanceof WXAppExtendObject)) {
+			WXAppExtendObject obj = (WXAppExtendObject) msg.mediaObject;
+			Toast.makeText(this, obj.extInfo, Toast.LENGTH_SHORT).show();
+		}
 	}
 
 }

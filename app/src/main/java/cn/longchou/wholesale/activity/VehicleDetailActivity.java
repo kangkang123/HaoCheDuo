@@ -283,7 +283,8 @@ public class VehicleDetailActivity extends BaseActivity {
 
 		cars = (Cars) getIntent().getExtras().getSerializable("cars");
 
-		mCoupon.setText("可以使用优惠卷");
+//		mCoupon.setText("可以使用优惠卷");
+		mCoupon.setText(cars.subTitle+"");
 		mShare.setVisibility(View.VISIBLE);
 		
 		//初始化关注的状态

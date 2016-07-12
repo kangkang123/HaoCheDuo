@@ -957,8 +957,8 @@
                     "startLine": 52,
                     "startColumn": 4,
                     "startOffset": 3492,
-                    "endColumn": 46,
-                    "endOffset": 3534
+                    "endColumn": 44,
+                    "endOffset": 3532
                 },
                 "from": {
                     "file": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\exploded-aar\\WholeSale\\ShareSDK\\unspecified\\res\\values-en\\values-en.xml",
@@ -966,8 +966,8 @@
                         "startLine": 40,
                         "startColumn": 4,
                         "startOffset": 2708,
-                        "endColumn": 46,
-                        "endOffset": 2750
+                        "endColumn": 44,
+                        "endOffset": 2748
                     }
                 }
             },
@@ -975,18 +975,18 @@
                 "to": {
                     "startLine": 53,
                     "startColumn": 4,
-                    "startOffset": 3539,
-                    "endColumn": 38,
-                    "endOffset": 3573
+                    "startOffset": 3537,
+                    "endColumn": 46,
+                    "endOffset": 3579
                 },
                 "from": {
                     "file": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\exploded-aar\\WholeSale\\ShareSDK\\unspecified\\res\\values-en\\values-en.xml",
                     "position": {
                         "startLine": 41,
                         "startColumn": 4,
-                        "startOffset": 2755,
-                        "endColumn": 38,
-                        "endOffset": 2789
+                        "startOffset": 2753,
+                        "endColumn": 46,
+                        "endOffset": 2795
                     }
                 }
             },
@@ -994,18 +994,18 @@
                 "to": {
                     "startLine": 54,
                     "startColumn": 4,
-                    "startOffset": 3578,
-                    "endColumn": 108,
-                    "endOffset": 3682
+                    "startOffset": 3584,
+                    "endColumn": 38,
+                    "endOffset": 3618
                 },
                 "from": {
                     "file": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\exploded-aar\\WholeSale\\ShareSDK\\unspecified\\res\\values-en\\values-en.xml",
                     "position": {
                         "startLine": 42,
                         "startColumn": 4,
-                        "startOffset": 2794,
-                        "endColumn": 108,
-                        "endOffset": 2898
+                        "startOffset": 2800,
+                        "endColumn": 38,
+                        "endOffset": 2834
                     }
                 }
             },
@@ -1013,8 +1013,8 @@
                 "to": {
                     "startLine": 55,
                     "startColumn": 4,
-                    "startOffset": 3687,
-                    "endColumn": 44,
+                    "startOffset": 3623,
+                    "endColumn": 108,
                     "endOffset": 3727
                 },
                 "from": {
@@ -1022,8 +1022,8 @@
                     "position": {
                         "startLine": 43,
                         "startColumn": 4,
-                        "startOffset": 2903,
-                        "endColumn": 44,
+                        "startOffset": 2839,
+                        "endColumn": 108,
                         "endOffset": 2943
                     }
                 }
@@ -1033,8 +1033,8 @@
                     "startLine": 56,
                     "startColumn": 4,
                     "startOffset": 3732,
-                    "endColumn": 46,
-                    "endOffset": 3774
+                    "endColumn": 44,
+                    "endOffset": 3772
                 },
                 "from": {
                     "file": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\exploded-aar\\WholeSale\\ShareSDK\\unspecified\\res\\values-en\\values-en.xml",
@@ -1042,8 +1042,8 @@
                         "startLine": 44,
                         "startColumn": 4,
                         "startOffset": 2948,
-                        "endColumn": 46,
-                        "endOffset": 2990
+                        "endColumn": 44,
+                        "endOffset": 2988
                     }
                 }
             },
@@ -1051,18 +1051,18 @@
                 "to": {
                     "startLine": 57,
                     "startColumn": 4,
-                    "startOffset": 3779,
-                    "endColumn": 66,
-                    "endOffset": 3841
+                    "startOffset": 3777,
+                    "endColumn": 46,
+                    "endOffset": 3819
                 },
                 "from": {
                     "file": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\exploded-aar\\WholeSale\\ShareSDK\\unspecified\\res\\values-en\\values-en.xml",
                     "position": {
                         "startLine": 45,
                         "startColumn": 4,
-                        "startOffset": 2995,
-                        "endColumn": 66,
-                        "endOffset": 3057
+                        "startOffset": 2993,
+                        "endColumn": 46,
+                        "endOffset": 3035
                     }
                 }
             },
@@ -1070,18 +1070,18 @@
                 "to": {
                     "startLine": 58,
                     "startColumn": 4,
-                    "startOffset": 3846,
-                    "endColumn": 56,
-                    "endOffset": 3898
+                    "startOffset": 3824,
+                    "endColumn": 68,
+                    "endOffset": 3888
                 },
                 "from": {
                     "file": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\exploded-aar\\WholeSale\\ShareSDK\\unspecified\\res\\values-en\\values-en.xml",
                     "position": {
                         "startLine": 46,
                         "startColumn": 4,
-                        "startOffset": 3062,
-                        "endColumn": 56,
-                        "endOffset": 3114
+                        "startOffset": 3040,
+                        "endColumn": 68,
+                        "endOffset": 3104
                     }
                 }
             },
@@ -1089,18 +1089,18 @@
                 "to": {
                     "startLine": 59,
                     "startColumn": 4,
-                    "startOffset": 3903,
-                    "endColumn": 62,
-                    "endOffset": 3961
+                    "startOffset": 3893,
+                    "endColumn": 69,
+                    "endOffset": 3958
                 },
                 "from": {
                     "file": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\exploded-aar\\WholeSale\\ShareSDK\\unspecified\\res\\values-en\\values-en.xml",
                     "position": {
                         "startLine": 47,
                         "startColumn": 4,
-                        "startOffset": 3119,
-                        "endColumn": 62,
-                        "endOffset": 3177
+                        "startOffset": 3109,
+                        "endColumn": 69,
+                        "endOffset": 3174
                     }
                 }
             },
@@ -1108,18 +1108,18 @@
                 "to": {
                     "startLine": 60,
                     "startColumn": 4,
-                    "startOffset": 3966,
-                    "endColumn": 70,
-                    "endOffset": 4032
+                    "startOffset": 3963,
+                    "endColumn": 66,
+                    "endOffset": 4025
                 },
                 "from": {
                     "file": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\exploded-aar\\WholeSale\\ShareSDK\\unspecified\\res\\values-en\\values-en.xml",
                     "position": {
                         "startLine": 48,
                         "startColumn": 4,
-                        "startOffset": 3182,
-                        "endColumn": 70,
-                        "endOffset": 3248
+                        "startOffset": 3179,
+                        "endColumn": 66,
+                        "endOffset": 3241
                     }
                 }
             },
@@ -1127,18 +1127,18 @@
                 "to": {
                     "startLine": 61,
                     "startColumn": 4,
-                    "startOffset": 4037,
-                    "endColumn": 59,
-                    "endOffset": 4092
+                    "startOffset": 4030,
+                    "endColumn": 56,
+                    "endOffset": 4082
                 },
                 "from": {
                     "file": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\exploded-aar\\WholeSale\\ShareSDK\\unspecified\\res\\values-en\\values-en.xml",
                     "position": {
                         "startLine": 49,
                         "startColumn": 4,
-                        "startOffset": 3253,
-                        "endColumn": 59,
-                        "endOffset": 3308
+                        "startOffset": 3246,
+                        "endColumn": 56,
+                        "endOffset": 3298
                     }
                 }
             },
@@ -1146,18 +1146,18 @@
                 "to": {
                     "startLine": 62,
                     "startColumn": 4,
-                    "startOffset": 4097,
-                    "endColumn": 53,
-                    "endOffset": 4146
+                    "startOffset": 4087,
+                    "endColumn": 62,
+                    "endOffset": 4145
                 },
                 "from": {
                     "file": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\exploded-aar\\WholeSale\\ShareSDK\\unspecified\\res\\values-en\\values-en.xml",
                     "position": {
                         "startLine": 50,
                         "startColumn": 4,
-                        "startOffset": 3313,
-                        "endColumn": 53,
-                        "endOffset": 3362
+                        "startOffset": 3303,
+                        "endColumn": 62,
+                        "endOffset": 3361
                     }
                 }
             },
@@ -1165,18 +1165,18 @@
                 "to": {
                     "startLine": 63,
                     "startColumn": 4,
-                    "startOffset": 4151,
-                    "endColumn": 61,
-                    "endOffset": 4208
+                    "startOffset": 4150,
+                    "endColumn": 70,
+                    "endOffset": 4216
                 },
                 "from": {
                     "file": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\exploded-aar\\WholeSale\\ShareSDK\\unspecified\\res\\values-en\\values-en.xml",
                     "position": {
                         "startLine": 51,
                         "startColumn": 4,
-                        "startOffset": 3367,
-                        "endColumn": 61,
-                        "endOffset": 3424
+                        "startOffset": 3366,
+                        "endColumn": 70,
+                        "endOffset": 3432
                     }
                 }
             },
@@ -1184,18 +1184,18 @@
                 "to": {
                     "startLine": 64,
                     "startColumn": 4,
-                    "startOffset": 4213,
-                    "endColumn": 63,
-                    "endOffset": 4272
+                    "startOffset": 4221,
+                    "endColumn": 59,
+                    "endOffset": 4276
                 },
                 "from": {
                     "file": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\exploded-aar\\WholeSale\\ShareSDK\\unspecified\\res\\values-en\\values-en.xml",
                     "position": {
                         "startLine": 52,
                         "startColumn": 4,
-                        "startOffset": 3429,
-                        "endColumn": 63,
-                        "endOffset": 3488
+                        "startOffset": 3437,
+                        "endColumn": 59,
+                        "endOffset": 3492
                     }
                 }
             },
@@ -1203,18 +1203,18 @@
                 "to": {
                     "startLine": 65,
                     "startColumn": 4,
-                    "startOffset": 4277,
-                    "endColumn": 59,
-                    "endOffset": 4332
+                    "startOffset": 4281,
+                    "endColumn": 53,
+                    "endOffset": 4330
                 },
                 "from": {
                     "file": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\exploded-aar\\WholeSale\\ShareSDK\\unspecified\\res\\values-en\\values-en.xml",
                     "position": {
                         "startLine": 53,
                         "startColumn": 4,
-                        "startOffset": 3493,
-                        "endColumn": 59,
-                        "endOffset": 3548
+                        "startOffset": 3497,
+                        "endColumn": 53,
+                        "endOffset": 3546
                     }
                 }
             },
@@ -1222,18 +1222,18 @@
                 "to": {
                     "startLine": 66,
                     "startColumn": 4,
-                    "startOffset": 4337,
-                    "endColumn": 46,
-                    "endOffset": 4379
+                    "startOffset": 4335,
+                    "endColumn": 61,
+                    "endOffset": 4392
                 },
                 "from": {
                     "file": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\exploded-aar\\WholeSale\\ShareSDK\\unspecified\\res\\values-en\\values-en.xml",
                     "position": {
                         "startLine": 54,
                         "startColumn": 4,
-                        "startOffset": 3553,
-                        "endColumn": 46,
-                        "endOffset": 3595
+                        "startOffset": 3551,
+                        "endColumn": 61,
+                        "endOffset": 3608
                     }
                 }
             },
@@ -1241,18 +1241,18 @@
                 "to": {
                     "startLine": 67,
                     "startColumn": 4,
-                    "startOffset": 4384,
-                    "endColumn": 48,
-                    "endOffset": 4428
+                    "startOffset": 4397,
+                    "endColumn": 63,
+                    "endOffset": 4456
                 },
                 "from": {
                     "file": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\exploded-aar\\WholeSale\\ShareSDK\\unspecified\\res\\values-en\\values-en.xml",
                     "position": {
                         "startLine": 55,
                         "startColumn": 4,
-                        "startOffset": 3600,
-                        "endColumn": 48,
-                        "endOffset": 3644
+                        "startOffset": 3613,
+                        "endColumn": 63,
+                        "endOffset": 3672
                     }
                 }
             },
@@ -1260,18 +1260,18 @@
                 "to": {
                     "startLine": 68,
                     "startColumn": 4,
-                    "startOffset": 4433,
-                    "endColumn": 74,
-                    "endOffset": 4503
+                    "startOffset": 4461,
+                    "endColumn": 59,
+                    "endOffset": 4516
                 },
                 "from": {
                     "file": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\exploded-aar\\WholeSale\\ShareSDK\\unspecified\\res\\values-en\\values-en.xml",
                     "position": {
                         "startLine": 56,
                         "startColumn": 4,
-                        "startOffset": 3649,
-                        "endColumn": 74,
-                        "endOffset": 3719
+                        "startOffset": 3677,
+                        "endColumn": 59,
+                        "endOffset": 3732
                     }
                 }
             },
@@ -1279,18 +1279,18 @@
                 "to": {
                     "startLine": 69,
                     "startColumn": 4,
-                    "startOffset": 4508,
-                    "endColumn": 45,
-                    "endOffset": 4549
+                    "startOffset": 4521,
+                    "endColumn": 46,
+                    "endOffset": 4563
                 },
                 "from": {
                     "file": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\exploded-aar\\WholeSale\\ShareSDK\\unspecified\\res\\values-en\\values-en.xml",
                     "position": {
                         "startLine": 57,
                         "startColumn": 4,
-                        "startOffset": 3724,
-                        "endColumn": 45,
-                        "endOffset": 3765
+                        "startOffset": 3737,
+                        "endColumn": 46,
+                        "endOffset": 3779
                     }
                 }
             },
@@ -1298,18 +1298,18 @@
                 "to": {
                     "startLine": 70,
                     "startColumn": 4,
-                    "startOffset": 4554,
-                    "endColumn": 59,
-                    "endOffset": 4609
+                    "startOffset": 4568,
+                    "endColumn": 48,
+                    "endOffset": 4612
                 },
                 "from": {
                     "file": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\exploded-aar\\WholeSale\\ShareSDK\\unspecified\\res\\values-en\\values-en.xml",
                     "position": {
                         "startLine": 58,
                         "startColumn": 4,
-                        "startOffset": 3770,
-                        "endColumn": 59,
-                        "endOffset": 3825
+                        "startOffset": 3784,
+                        "endColumn": 48,
+                        "endOffset": 3828
                     }
                 }
             },
@@ -1317,18 +1317,18 @@
                 "to": {
                     "startLine": 71,
                     "startColumn": 4,
-                    "startOffset": 4614,
-                    "endColumn": 46,
-                    "endOffset": 4656
+                    "startOffset": 4617,
+                    "endColumn": 74,
+                    "endOffset": 4687
                 },
                 "from": {
                     "file": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\exploded-aar\\WholeSale\\ShareSDK\\unspecified\\res\\values-en\\values-en.xml",
                     "position": {
                         "startLine": 59,
                         "startColumn": 4,
-                        "startOffset": 3830,
-                        "endColumn": 46,
-                        "endOffset": 3872
+                        "startOffset": 3833,
+                        "endColumn": 74,
+                        "endOffset": 3903
                     }
                 }
             },
@@ -1336,18 +1336,18 @@
                 "to": {
                     "startLine": 72,
                     "startColumn": 4,
-                    "startOffset": 4661,
-                    "endColumn": 109,
-                    "endOffset": 4766
+                    "startOffset": 4692,
+                    "endColumn": 45,
+                    "endOffset": 4733
                 },
                 "from": {
                     "file": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\exploded-aar\\WholeSale\\ShareSDK\\unspecified\\res\\values-en\\values-en.xml",
                     "position": {
                         "startLine": 60,
                         "startColumn": 4,
-                        "startOffset": 3877,
-                        "endColumn": 109,
-                        "endOffset": 3982
+                        "startOffset": 3908,
+                        "endColumn": 45,
+                        "endOffset": 3949
                     }
                 }
             },
@@ -1355,18 +1355,18 @@
                 "to": {
                     "startLine": 73,
                     "startColumn": 4,
-                    "startOffset": 4771,
-                    "endColumn": 64,
-                    "endOffset": 4831
+                    "startOffset": 4738,
+                    "endColumn": 59,
+                    "endOffset": 4793
                 },
                 "from": {
                     "file": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\exploded-aar\\WholeSale\\ShareSDK\\unspecified\\res\\values-en\\values-en.xml",
                     "position": {
                         "startLine": 61,
                         "startColumn": 4,
-                        "startOffset": 3987,
-                        "endColumn": 64,
-                        "endOffset": 4047
+                        "startOffset": 3954,
+                        "endColumn": 59,
+                        "endOffset": 4009
                     }
                 }
             },
@@ -1374,18 +1374,18 @@
                 "to": {
                     "startLine": 74,
                     "startColumn": 4,
-                    "startOffset": 4836,
-                    "endColumn": 61,
-                    "endOffset": 4893
+                    "startOffset": 4798,
+                    "endColumn": 46,
+                    "endOffset": 4840
                 },
                 "from": {
                     "file": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\exploded-aar\\WholeSale\\ShareSDK\\unspecified\\res\\values-en\\values-en.xml",
                     "position": {
                         "startLine": 62,
                         "startColumn": 4,
-                        "startOffset": 4052,
-                        "endColumn": 61,
-                        "endOffset": 4109
+                        "startOffset": 4014,
+                        "endColumn": 46,
+                        "endOffset": 4056
                     }
                 }
             },
@@ -1393,18 +1393,18 @@
                 "to": {
                     "startLine": 75,
                     "startColumn": 4,
-                    "startOffset": 4898,
-                    "endColumn": 68,
-                    "endOffset": 4962
+                    "startOffset": 4845,
+                    "endColumn": 109,
+                    "endOffset": 4950
                 },
                 "from": {
                     "file": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\exploded-aar\\WholeSale\\ShareSDK\\unspecified\\res\\values-en\\values-en.xml",
                     "position": {
                         "startLine": 63,
                         "startColumn": 4,
-                        "startOffset": 4114,
-                        "endColumn": 68,
-                        "endOffset": 4178
+                        "startOffset": 4061,
+                        "endColumn": 109,
+                        "endOffset": 4166
                     }
                 }
             },
@@ -1412,18 +1412,18 @@
                 "to": {
                     "startLine": 76,
                     "startColumn": 4,
-                    "startOffset": 4967,
-                    "endColumn": 58,
-                    "endOffset": 5021
+                    "startOffset": 4955,
+                    "endColumn": 64,
+                    "endOffset": 5015
                 },
                 "from": {
                     "file": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\exploded-aar\\WholeSale\\ShareSDK\\unspecified\\res\\values-en\\values-en.xml",
                     "position": {
                         "startLine": 64,
                         "startColumn": 4,
-                        "startOffset": 4183,
-                        "endColumn": 58,
-                        "endOffset": 4237
+                        "startOffset": 4171,
+                        "endColumn": 64,
+                        "endOffset": 4231
                     }
                 }
             },
@@ -1431,18 +1431,18 @@
                 "to": {
                     "startLine": 77,
                     "startColumn": 4,
-                    "startOffset": 5026,
-                    "endColumn": 50,
-                    "endOffset": 5072
+                    "startOffset": 5020,
+                    "endColumn": 61,
+                    "endOffset": 5077
                 },
                 "from": {
                     "file": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\exploded-aar\\WholeSale\\ShareSDK\\unspecified\\res\\values-en\\values-en.xml",
                     "position": {
                         "startLine": 65,
                         "startColumn": 4,
-                        "startOffset": 4242,
-                        "endColumn": 50,
-                        "endOffset": 4288
+                        "startOffset": 4236,
+                        "endColumn": 61,
+                        "endOffset": 4293
                     }
                 }
             },
@@ -1450,18 +1450,18 @@
                 "to": {
                     "startLine": 78,
                     "startColumn": 4,
-                    "startOffset": 5077,
-                    "endColumn": 113,
-                    "endOffset": 5186
+                    "startOffset": 5082,
+                    "endColumn": 68,
+                    "endOffset": 5146
                 },
                 "from": {
                     "file": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\exploded-aar\\WholeSale\\ShareSDK\\unspecified\\res\\values-en\\values-en.xml",
                     "position": {
                         "startLine": 66,
                         "startColumn": 4,
-                        "startOffset": 4293,
-                        "endColumn": 113,
-                        "endOffset": 4402
+                        "startOffset": 4298,
+                        "endColumn": 68,
+                        "endOffset": 4362
                     }
                 }
             },
@@ -1469,18 +1469,18 @@
                 "to": {
                     "startLine": 79,
                     "startColumn": 4,
-                    "startOffset": 5191,
-                    "endColumn": 44,
-                    "endOffset": 5231
+                    "startOffset": 5151,
+                    "endColumn": 58,
+                    "endOffset": 5205
                 },
                 "from": {
                     "file": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\exploded-aar\\WholeSale\\ShareSDK\\unspecified\\res\\values-en\\values-en.xml",
                     "position": {
                         "startLine": 67,
                         "startColumn": 4,
-                        "startOffset": 4407,
-                        "endColumn": 44,
-                        "endOffset": 4447
+                        "startOffset": 4367,
+                        "endColumn": 58,
+                        "endOffset": 4421
                     }
                 }
             },
@@ -1488,18 +1488,18 @@
                 "to": {
                     "startLine": 80,
                     "startColumn": 4,
-                    "startOffset": 5236,
-                    "endColumn": 107,
-                    "endOffset": 5339
+                    "startOffset": 5210,
+                    "endColumn": 50,
+                    "endOffset": 5256
                 },
                 "from": {
                     "file": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\exploded-aar\\WholeSale\\ShareSDK\\unspecified\\res\\values-en\\values-en.xml",
                     "position": {
                         "startLine": 68,
                         "startColumn": 4,
-                        "startOffset": 4452,
-                        "endColumn": 107,
-                        "endOffset": 4555
+                        "startOffset": 4426,
+                        "endColumn": 50,
+                        "endOffset": 4472
                     }
                 }
             },
@@ -1507,18 +1507,18 @@
                 "to": {
                     "startLine": 81,
                     "startColumn": 4,
-                    "startOffset": 5344,
-                    "endColumn": 59,
-                    "endOffset": 5399
+                    "startOffset": 5261,
+                    "endColumn": 113,
+                    "endOffset": 5370
                 },
                 "from": {
                     "file": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\exploded-aar\\WholeSale\\ShareSDK\\unspecified\\res\\values-en\\values-en.xml",
                     "position": {
                         "startLine": 69,
                         "startColumn": 4,
-                        "startOffset": 4560,
-                        "endColumn": 59,
-                        "endOffset": 4615
+                        "startOffset": 4477,
+                        "endColumn": 113,
+                        "endOffset": 4586
                     }
                 }
             },
@@ -1526,18 +1526,75 @@
                 "to": {
                     "startLine": 82,
                     "startColumn": 4,
-                    "startOffset": 5404,
-                    "endColumn": 46,
-                    "endOffset": 5446
+                    "startOffset": 5375,
+                    "endColumn": 44,
+                    "endOffset": 5415
                 },
                 "from": {
                     "file": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\exploded-aar\\WholeSale\\ShareSDK\\unspecified\\res\\values-en\\values-en.xml",
                     "position": {
                         "startLine": 70,
                         "startColumn": 4,
-                        "startOffset": 4620,
+                        "startOffset": 4591,
+                        "endColumn": 44,
+                        "endOffset": 4631
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 83,
+                    "startColumn": 4,
+                    "startOffset": 5420,
+                    "endColumn": 107,
+                    "endOffset": 5523
+                },
+                "from": {
+                    "file": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\exploded-aar\\WholeSale\\ShareSDK\\unspecified\\res\\values-en\\values-en.xml",
+                    "position": {
+                        "startLine": 71,
+                        "startColumn": 4,
+                        "startOffset": 4636,
+                        "endColumn": 107,
+                        "endOffset": 4739
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 84,
+                    "startColumn": 4,
+                    "startOffset": 5528,
+                    "endColumn": 59,
+                    "endOffset": 5583
+                },
+                "from": {
+                    "file": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\exploded-aar\\WholeSale\\ShareSDK\\unspecified\\res\\values-en\\values-en.xml",
+                    "position": {
+                        "startLine": 72,
+                        "startColumn": 4,
+                        "startOffset": 4744,
+                        "endColumn": 59,
+                        "endOffset": 4799
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 85,
+                    "startColumn": 4,
+                    "startOffset": 5588,
+                    "endColumn": 46,
+                    "endOffset": 5630
+                },
+                "from": {
+                    "file": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\exploded-aar\\WholeSale\\ShareSDK\\unspecified\\res\\values-en\\values-en.xml",
+                    "position": {
+                        "startLine": 73,
+                        "startColumn": 4,
+                        "startOffset": 4804,
                         "endColumn": 46,
-                        "endOffset": 4662
+                        "endOffset": 4846
                     }
                 }
             }

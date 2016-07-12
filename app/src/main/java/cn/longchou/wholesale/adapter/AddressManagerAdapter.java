@@ -1,9 +1,11 @@
 package cn.longchou.wholesale.adapter;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import cn.longchou.wholesale.R;
 import cn.longchou.wholesale.domain.AddressList;
+import cn.longchou.wholesale.global.Constant;
 
 import android.content.Context;
 import android.view.View;
@@ -23,6 +25,7 @@ public class AddressManagerAdapter extends BaseAdapter {
 
 	private Context context;
 	private List<AddressList.UserAddressBean> list;
+
 	public AddressManagerAdapter(Context context,List<AddressList.UserAddressBean> list) {
 		this.context=context;
 		this.list=list;
@@ -63,7 +66,12 @@ public class AddressManagerAdapter extends BaseAdapter {
 		AddressList.UserAddressBean item = list.get(position);
 		holder.Name.setText(item.userName);
 		holder.Phone.setText(item.phone);
-		String address=item.province+item.city+item.county+item.address;
+		String address="";
+		if(Constant.getAddressCitys().contains(item.province)){
+			address=item.province+item.city+item.address;
+		}else{
+			address=item.province+item.city+item.county+item.address;
+		}
 		holder.Address.setText(address);
 		return convertView;
 	}

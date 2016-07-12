@@ -24,6 +24,7 @@ import cn.longchou.wholesale.base.BaseApplication;
 import cn.longchou.wholesale.bean.CityProvinces;
 import cn.longchou.wholesale.domain.CityLocation;
 import cn.longchou.wholesale.global.Constant;
+import cn.longchou.wholesale.utils.PreferUtils;
 
 public class FirstLocationActivity extends BaseActivity {
 
@@ -60,10 +61,12 @@ public class FirstLocationActivity extends BaseActivity {
 	public void initData() {
 		//解析获取的定位的城市
 		citys = CityLocation.getCitys();
-		
-		if(TextUtils.isEmpty(Constant.LocationCity))
+		String city=PreferUtils.getString(getApplicationContext(),"city",null);
+		if(!TextUtils.isEmpty(city))
 		{
-			mTvCity.setText("定位中...");
+			mTvCity.setText(city);
+		}else{
+			mTvCity.setText("定位失败");
 		}
 		
 		adapter = new FirstLocationAdapter(getApplicationContext(), citys);
@@ -252,63 +255,4 @@ public class FirstLocationActivity extends BaseActivity {
 		FirstLocationActivity.this.setResult(2, intent);
 		finish();
 	}
-	
-	
-	/***
-	 * Stop location service
-	 */
-	@Override
-	protected void onStop() {
-		// TODO Auto-generated method stub
-		locationService.unregisterListener(mListener); //注销掉监听
-		locationService.stop(); //停止定位服务
-		super.onStop();
-	}
-
-	@Override
-	protected void onStart() {
-		// TODO Auto-generated method stub
-		super.onStart();
-		// -----------location config ------------
-		locationService = ((BaseApplication) getApplication()).locationService; 
-		//获取locationservice实例，建议应用中只初始化1个location实例，然后使用，可以参考其他示例的activity，都是通过此种方式获取locationservice实例的
-		locationService.registerListener(mListener);
-		//注册监听
-		int type = getIntent().getIntExtra("from", 0);
-		if (type == 0) {
-			locationService.setLocationOption(locationService.getDefaultLocationClientOption());
-		} else if (type == 1) {
-			locationService.setLocationOption(locationService.getOption());
-		}
-		
-		locationService.start();
-		
-	}
-	
-	/*****
-	 * @see copy funtion to you project
-	 * 定位结果回调，重写onReceiveLocation方法，可以直接拷贝如下代码到自己工程中修改
-	 *
-	 */
-	private BDLocationListener mListener = new BDLocationListener() {
-
-		@Override
-		public void onReceiveLocation(BDLocation location) {
-			// TODO Auto-generated method stub
-			if (null != location && location.getLocType() != BDLocation.TypeServerError) {
-				String city = location.getCity();
-				if(TextUtils.isEmpty(city))
-				{
-					mTvCity.setText("定位失败");
-				}else{
-					
-					mTvCity.setText(location.getCity()+"");
-					Constant.LocationCity=location.getCity();
-				}
-				
-			}
-		}
-
-	};
-
 }

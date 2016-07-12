@@ -28,6 +28,8 @@ public class CarsInfo {
 	public boolean isSelect;
 	//金融方案
 	public String financePlan;
+	//副标题
+	public String subTitle;
 	
 	//创建车辆信息的类
 	public static CarsInfo clone(Cars info) {
@@ -43,6 +45,7 @@ public class CarsInfo {
 		carInfo.inCart=info.inCart;
 		carInfo.isFollow=info.isFollow;
 		carInfo.isSelect=false;
+		carInfo.subTitle=info.subTitle;
 		carInfo.financePlan="A 批售融资方案按天计息即时到账";
 		return carInfo;
 	}
@@ -62,6 +65,7 @@ public class CarsInfo {
 		carInfo.isFollow=info.isFollow;
 		carInfo.isSelect=true;
 		carInfo.financePlan=info.financePlan;
+		carInfo.subTitle=info.subTitle;
 		return carInfo;
 	}
 	
@@ -81,6 +85,7 @@ public class CarsInfo {
 		carInfo.isFollow=info.isFollow;
 		carInfo.isSelect=info.isSelect;
 		carInfo.financePlan=plan;
+		carInfo.subTitle=info.subTitle;
 		return carInfo;
 	}
 	
@@ -100,6 +105,7 @@ public class CarsInfo {
 		carInfo.isFollow=info.isFollow;
 		carInfo.isSelect=false;
 		carInfo.financePlan=info.financePlan;
+		carInfo.subTitle=info.subTitle;
 		return carInfo;
 	}
 	

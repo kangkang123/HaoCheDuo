@@ -14,6 +14,9 @@ import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.baidu.location.BDLocation;
+import com.baidu.location.BDLocationListener;
+import com.baidu.location.service.LocationService;
 import com.google.gson.Gson;
 import com.lidroid.xutils.HttpUtils;
 import com.lidroid.xutils.exception.HttpException;
@@ -29,6 +32,7 @@ import java.util.List;
 import cn.longchou.wholesale.R;
 import cn.longchou.wholesale.adapter.PopWindowAdapter;
 import cn.longchou.wholesale.base.BaseActivity;
+import cn.longchou.wholesale.base.BaseApplication;
 import cn.longchou.wholesale.domain.LoginValidate;
 import cn.longchou.wholesale.global.Constant;
 import cn.longchou.wholesale.utils.PreferUtils;
@@ -118,12 +122,13 @@ public class FeedBackActivity extends BaseActivity {
 			if(isOpen){
 				isOpen=false;
 				mArrow.setImageResource(R.drawable.arrow_down);
-//				popupWindow.dismiss();
+				popupWindow.dismiss();
 			}else{
 				isOpen=true;
 				mArrow.setImageResource(R.drawable.arrow_up_down);
 				showPopWindow();
 			}
+
 			break;
 		default:
 			break;
@@ -133,13 +138,14 @@ public class FeedBackActivity extends BaseActivity {
 	private void showPopWindow(){
 		View view=View.inflate(FeedBackActivity.this,R.layout.item_pop_feedback,null);
 		popupWindow=new PopupWindow(view, WindowManager.LayoutParams.MATCH_PARENT,WindowManager.LayoutParams.WRAP_CONTENT);
-		popupWindow.setFocusable(true);
-		ColorDrawable dw = new ColorDrawable(0xb0000000);
-		popupWindow.setBackgroundDrawable(dw);
+//		popupWindow.setFocusable(true);
+//		ColorDrawable dw = new ColorDrawable(0xb0000000);
+		popupWindow.setBackgroundDrawable(new BitmapDrawable());
+//		popupWindow.setBackgroundDrawable(dw);
 		popupWindow.showAsDropDown(mRelative);
-		popupWindow.setTouchable(true);
-		popupWindow.setFocusable(true);
-		popupWindow.setOutsideTouchable(true);
+//		popupWindow.setTouchable(true);
+//		popupWindow.setFocusable(true);
+//		popupWindow.setOutsideTouchable(false);
 		mLvPop= (ListView) view.findViewById(R.id.lv_popwindow);
 
 		adapter=new PopWindowAdapter(list,getApplicationContext(),mList);
@@ -181,11 +187,22 @@ public class FeedBackActivity extends BaseActivity {
 
 	public void feedBack(String result){
 		String phone = PreferUtils.getString(getApplicationContext(), "phone",null);
+		String token=PreferUtils.getString(getApplicationContext(),"token",null);
+		String city=PreferUtils.getString(getApplicationContext(),"city",null);
 		HttpUtils http=new HttpUtils();
 		String url= Constant.RequestFeedBack;
 		RequestParams params=new RequestParams();
 		params.addBodyParameter("content",result);
 		params.addBodyParameter("phone",phone);
+		params.addBodyParameter("Token",token);
+		if(!TextUtils.isEmpty(city))
+		{
+			params.addBodyParameter("cityName",city);
+		}else{
+			params.addBodyParameter("cityName","上海市");
+		}
+		params.addBodyParameter("deviceType",2+"");
+
 		http.send(HttpRequest.HttpMethod.POST, url, params, new RequestCallBack<String>() {
 			@Override
 			public void onSuccess(ResponseInfo<String> responseInfo) {

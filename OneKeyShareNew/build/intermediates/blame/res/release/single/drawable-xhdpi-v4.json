@@ -24,12 +24,12 @@
         "source": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\src\\main\\res\\drawable-xhdpi\\ssdk_oks_classic_foursquare.png"
     },
     {
-        "merged": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\ssdk_oks_classic_tencentweibo.png",
-        "source": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\src\\main\\res\\drawable-xhdpi\\ssdk_oks_classic_tencentweibo.png"
-    },
-    {
         "merged": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\ssdk_oks_classic_laiwang.png",
         "source": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\src\\main\\res\\drawable-xhdpi\\ssdk_oks_classic_laiwang.png"
+    },
+    {
+        "merged": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\ssdk_oks_classic_tencentweibo.png",
+        "source": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\src\\main\\res\\drawable-xhdpi\\ssdk_oks_classic_tencentweibo.png"
     },
     {
         "merged": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\ssdk_title_div.png",
@@ -98,6 +98,10 @@
     {
         "merged": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\ssdk_oks_classic_pocket.png",
         "source": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\src\\main\\res\\drawable-xhdpi\\ssdk_oks_classic_pocket.png"
+    },
+    {
+        "merged": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\ssdk_oks_classic_wechatfavorite.png",
+        "source": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\src\\main\\res\\drawable-xhdpi\\ssdk_oks_classic_wechatfavorite.png"
     },
     {
         "merged": "D:\\AndroidSpace\\WholeSale\\OneKeyShareNew\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\ssdk_oks_classic_whatsapp.png",

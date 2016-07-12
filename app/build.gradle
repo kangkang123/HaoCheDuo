@@ -47,5 +47,7 @@ dependencies {
     compile project(':Pushlib')
     compile project(':MeiqiaSdk')
     compile files('libs/universal-image-loader-1.9.5.jar')
+    compile files('libs/AMap_Location_V2.6.0_20160628.jar')
+    compile 'de.hdodenhof:circleimageview:2.1.0'
     compile project(':OneKeyShareNew')
 }

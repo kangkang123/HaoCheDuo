@@ -1,5 +1,6 @@
 package cn.longchou.wholesale.activity;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import android.content.Intent;
@@ -44,6 +45,7 @@ public class AddressManagerActivity extends BaseActivity {
 	private ListView mListView;
 	private TextView mAddress;
 	private List<AddressList.UserAddressBean> list;
+
 	@Override
 	public void initView() {
 		setContentView(R.layout.activity_address_manager);

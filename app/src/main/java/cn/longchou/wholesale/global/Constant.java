@@ -19,10 +19,10 @@ public class Constant {
 	
 //	public static String url="http://121.40.204.61:8099/longchoucar/";
 	
-//	public static String url="http://120.55.82.202/";
-	public static String url="http://10.0.0.14:8080/";
+	public static String url="http://120.55.82.202/";
+//	public static String url="http://10.0.0.14:8080/";
 //	public static String url="http://121.40.49.29/";
-//	public static String url="http://10.0.2.137:8080/";
+//	public static String url="http://10.0.2.69:8080/";
 //	public static String url="http://10.0.2.77:8080/";
 	
 	
@@ -35,6 +35,7 @@ public class Constant {
 	public static String ForgetPassword=url+"resetPwd?";
 	//首页
 	public static String HomePage=url+"homepage?";
+//	public static String HomePage=url+"app/api/homepage/v1.1/get?";
 	//城市定位
 	public static String RequestCityLocation=url+"ourcity?";
 	//车市列表
@@ -82,7 +83,8 @@ public class Constant {
 	//金融首页图片
 	public static String RequestFinaceHome=url+"finaceHome?";
 	//我的金融的内容
-	public static String RequestmyFinance=url+"myFinance?";
+//	public static String RequestmyFinance=url+"myFinance?";
+	public static String RequestmyFinance=url+"app/api/fp/v1.0/myfinance?";
 	//我的积分
 	public static String RequestSocre=url+"socre?";
 	//我的余额
@@ -90,9 +92,11 @@ public class Constant {
 	//我的支出明细
 	public static String RequestBalanceDetail=url+"balance/detail?";
 	//是否授信
-	public static String RequestQueryTrust=url+"queryTrust?";
+//	public static String RequestQueryTrust=url+"queryTrust?";
+	public static String RequestQueryTrust=url+"app/api/fp/v1.0/getTrust?";
 	//申请金融贷款
-	public static String RequestApply=url+"aply?";
+//	public static String RequestApply=url+"aply?";
+	public static String RequestApply=url+"app/api/fp/v1.0/apply?";
 	//金融的详情
 	public static String RequestFinanceDetail=url+"financeDetail?";
 	//更改密码
@@ -148,7 +152,7 @@ public class Constant {
 	public static String RequestHead=url+"app/api/personalInfo/v1.0/savePic";
 
 	//意见反馈
-	public static String RequestFeedBack=url+"app/api/advice/v1.0/save";
+	public static String RequestFeedBack=url+"app/api/advice/v1.1/save";
 
 	//保存个人信息
 	public static String RequestSaveMyInfo=url+"app/api/personalInfo/v1.0/save";
@@ -550,5 +554,16 @@ public class Constant {
 	public static String sexChoose="保密";
 	//个人的昵称
 	public static String personName="";
-	
+
+	public static List<String> getAddressCitys()
+	{
+		List<String> mCityList=new ArrayList<String>();
+		mCityList.add("北京");
+		mCityList.add("上海");
+		mCityList.add("天津");
+		mCityList.add("重庆");
+		mCityList.add("香港");
+		mCityList.add("澳门");
+		return mCityList;
+	}
 }

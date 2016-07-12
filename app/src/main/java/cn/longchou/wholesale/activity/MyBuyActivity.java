@@ -276,7 +276,7 @@ public class MyBuyActivity extends BaseActivity {
 						//设置车系
 						setCars();
 					}else{
-						Toast.makeText(getApplicationContext(), "请先选中品牌", 0).show();
+						UIUtils.showToastSafe("请先选中品牌");
 					}
 				}
 			}
@@ -446,6 +446,7 @@ public class MyBuyActivity extends BaseActivity {
 		params.addBodyParameter("date", BudgetData.myBuyTime);
 		params.addBodyParameter("brand", AvailBrand.mHotBrand);
 		params.addBodyParameter("series", AvailBrand.mHotCarLine);
+		params.addBodyParameter("deviceType", 2+"");
 		http.send(HttpMethod.POST, url, params, new RequestCallBack<String>() {
 
 			@Override

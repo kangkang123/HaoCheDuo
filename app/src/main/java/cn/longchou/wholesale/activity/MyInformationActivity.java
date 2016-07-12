@@ -52,6 +52,7 @@ import cn.longchou.wholesale.utils.UIUtils;
 import cn.longchou.wholesale.utils.UploadUtil;
 import cn.longchou.wholesale.view.ItemMyInformation;
 import cn.longchou.wholesale.view.SelectPicPopupWindow;
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public class MyInformationActivity extends BaseActivity {
 
@@ -67,6 +68,7 @@ public class MyInformationActivity extends BaseActivity {
 	private ItemMyInformation mCarCertaion;
 	private ItemMyInformation mSex;
 	private RelativeLayout mRLHead;
+	private CircleImageView mImageHead;
 	
 	//自定义的弹出框类
 	SelectPicPopupWindow menuWindow;
@@ -113,6 +115,8 @@ public class MyInformationActivity extends BaseActivity {
 		//头像
 		mRLHead = (RelativeLayout) findViewById(R.id.rl_head);
 		mHead = (ImageView) findViewById(R.id.iv_my_head_login);
+
+		mImageHead= (CircleImageView) findViewById(R.id.profile_image);
 	}
 
 	@Override
@@ -210,6 +214,7 @@ public class MyInformationActivity extends BaseActivity {
 				}
 				if(!TextUtils.isEmpty(data.imgUrl)){
 					Glide.with(MyInformationActivity.this).load(data.imgUrl).placeholder(R.drawable.me).into(mHead);
+					
 				}
 			}
 		}
